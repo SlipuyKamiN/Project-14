@@ -1,0 +1,98 @@
+.header {
+  background-color: $bgc-primary-color;
+}
+.header__container {
+  display: flex;
+  align-items: center;
+}
+.nav {
+  display: flex;
+}
+.nav__list {
+  display: flex;
+  align-items: center;
+  margin-left: 308px;
+}
+.nav__item {
+  &:not(:last-child) {
+    margin-right: 28px;
+  }
+}
+.burger__button {
+  //min-height: 40px;
+  //min-width: 40px;
+
+  margin-left: auto;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  border-radius: 50%;
+  outline: none;
+  color: $classic-white;
+}
+.burger-icon {
+  fill: $classic-white;
+}
+.buy-now__button {
+  min-width: 152px;
+  height: 42px;
+  border-radius: 10px;
+  margin-left: 36px;
+  outline: none;
+}
+
+// For scrolling
+html {
+  scroll-behavior: smooth;
+}
+
+/* Стили для подложки */
+
+.overlay {
+  /* Скрываем подложку  */
+  opacity: 0;
+  visibility: hidden;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 20;
+  transition: 0.3s all;
+}
+
+.modal {
+  /* Скрываем окна  */
+  opacity: 0;
+  visibility: hidden;
+
+  /*  Установаем ширину окна  */
+  width: 100%;
+  max-width: 500px;
+
+  /*  Центрируем и задаем z-index */
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 30; /* Должен быть выше чем у подложки*/
+
+  /*  Побочные стили   */
+  box-shadow: 0 3px 10px -0.5px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  padding: 30px;
+  border-radius: 3px;
+  background-color: #fff;
+  transition: 0.3s all;
+}
+
+/* Стили для активных классов подложки и окна */
+
+.modal.active,
+.overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
