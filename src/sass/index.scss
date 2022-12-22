@@ -1,3 +1,16 @@
 @import './utils/vars';
 @import './base/base';
 @import './utils/visually-hidden';
+
+@import './components/a-header/header';
+@import './components/b-hero/hero';
+@import './components/c-products/products';
+@import './components/d-about/about';
+@import './components/e-advantages/advantages';
+@import './components/f-reviews/gallery';
+@import './components/f-reviews/reviews';
+@import './components/g-contacts/contacts';
+@import './components/h-footer/footer';
+
+@import './components/i-modal-set1/modal-set1';
+@import './components/j-modal-set2/modal-set2';
