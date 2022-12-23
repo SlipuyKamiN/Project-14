@@ -1,0 +1,268 @@
+:root {
+  --contact-indent: 16px;
+  --contact-items: 3;
+}
+.contact {
+  background-color: $bgc-primary-color;
+  //   padding-bottom: 60px;
+}
+.contact__card-set {
+  display: flex;
+  flex-wrap: wrap;
+
+  justify-content: center;
+  align-items: center;
+  gap: var(--contact-indent);
+  margin-bottom: 20px;
+  align-items: stretch;
+
+  --contact-items: 1;
+  @media screen and (min-width: 768px) {
+    --contact-items: 3;
+    margin-bottom: 40px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 60px;
+    --contact-indent: 32px;
+  }
+}
+.contact__card {
+  display: block;
+  padding-top: 40px;
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-bottom: 24px;
+
+  background-color: $text-and-modal-white;
+  box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+  border-radius: 24px;
+
+  flex-basis: calc(
+    (100% - (var(--contact-indent) * (var(--contact-items) - 1))) /
+      (var(--contact-items))
+  );
+
+  @media screen and (min-width: 768px) {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding: 40px;
+  }
+}
+
+.contact__header-wrapper {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4px 22px;
+
+  background-color: $brand-primary-color;
+
+  border-radius: 4px;
+  margin-bottom: 20px;
+
+  @media screen and (min-width: 768px) {
+    padding: 4px 10px;
+    margin-bottom: 32px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding: 4px 14px;
+  }
+}
+.contact__header {
+  color: $text-primary-black;
+
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 120%;
+  letter-spacing: 0.04em;
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
+    line-height: 140%;
+  }
+}
+
+.contact__city {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 186%;
+
+  letter-spacing: 0.04em;
+
+  color: $text-primary-black;
+  margin-bottom: 8px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    margin-bottom: 12px;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 16px;
+    margin-bottom: 8px;
+  }
+}
+
+.contact__mail-address {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 183%;
+
+  letter-spacing: 0.04em;
+
+  color: $card-brown-color;
+  margin-bottom: 24px;
+
+  &:hover,
+  &:focus {
+    text-decoration-line: underline;
+  }
+
+  @media screen and (max-width: 345px) {
+    width: 190px;
+  }
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    margin-bottom: 32px;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 16px;
+  }
+}
+
+.contact__gray-line {
+  width: 100%;
+  border-top: 1px solid #e1e1e1;
+  margin-bottom: 24px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 32px;
+  }
+}
+.contact__work-time {
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+  margin-bottom: 24px;
+  @media screen and (min-width: 1200px) {
+    row-gap: 12px;
+  }
+}
+.contact__work-day {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 186%;
+
+  color: $text-primary-black;
+  letter-spacing: 0.04em;
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 16px;
+  }
+}
+.contact__work-time {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 186%;
+
+  color: $btn-disabled-grey;
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 16px;
+  }
+}
+.contact__data-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  @media screen and (min-width: 768px) {
+    gap: 4px;
+  }
+}
+.contact__data {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 160%;
+
+  color: $text-primary-black;
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: 150%;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 16px;
+  }
+}
+
+.contact__buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 16px;
+
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+  }
+}
+.contact__button {
+  min-width: 196px;
+  border-radius: 10px;
+  padding: 12px 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  cursor: pointer;
+}
+.contact__button--location {
+  background-color: $brand-primary-color;
+  border: none;
+  transition-property: background-color, color;
+  transition-duration: $action-total-time;
+  transition-timing-function: $action-cubic-time;
+  &:hover {
+    background-color: $btn-hover-green;
+  }
+  &:focus {
+    background-color: $btn-hover-green;
+    color: $classic-white;
+  }
+}
+
+.contact__button--franchise {
+  border: 2px solid $brand-primary-color;
+
+  background-color: $bgc-primary-color;
+
+  transition-property: border, color;
+  transition-duration: $action-total-time;
+  transition-timing-function: $action-cubic-time;
+
+  &:hover {
+    border-color: $btn-hover-green;
+  }
+  &:focus {
+    border-color: $btn-hover-green;
+    color: $classic-white;
+  }
+}
+.contact__button-arrow {
+  fill: $text-primary-black;
+}
+
+.contact__button-text {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: calc(18 / 14);
+}
