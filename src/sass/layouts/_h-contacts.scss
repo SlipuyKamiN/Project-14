@@ -33,7 +33,7 @@
   padding-right: 32px;
   padding-bottom: 24px;
 
-  background: $text-and-modal-white;
+  background-color: $text-and-modal-white;
   box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
   border-radius: 24px;
 
@@ -115,6 +115,12 @@
 
   color: $card-brown-color;
   margin-bottom: 24px;
+
+  &:hover,
+  &:focus {
+    text-decoration-line: underline;
+  }
+
   @media screen and (max-width: 345px) {
     width: 190px;
   }
