@@ -17,7 +17,6 @@ body {
   }
 
   @media screen and (min-width: 768px) {
-    max-width: 768px;
     // background-image: url(../images/background_tablet.jpg);
 
     @media (min-device-pixel-ratio: 2),
@@ -28,8 +27,6 @@ body {
   }
 
   @media screen and (min-width: 1200px) {
-    max-width: 1600px;
-    padding: 200px 0;
     // background-image: url(../images/background_desktop.jpg);
 
     @media (min-device-pixel-ratio: 2),
