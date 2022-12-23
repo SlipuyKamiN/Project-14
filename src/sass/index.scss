@@ -1,4 +1,20 @@
 @import './utils/vars';
 @import './base/base';
 @import './utils/visually-hidden';
-@import './components/c-products/products';
+
+@import './layouts/a-header';
+@import './layouts/b-hero';
+@import './layouts/c-products';
+@import './layouts/d-about';
+@import './layouts/e-advantages';
+@import './layouts/f-gallery';
+@import './layouts/g-reviews';
+@import './layouts/h-contacts';
+@import './layouts/i-footer';
+
+@import './layouts/modals/modal-product';
+@import './layouts/modals/modal-ingredients';
+@import './layouts/modals/modal-read-more';
+@import './layouts/modals/modal-franchise';
+@import './layouts/modals/modal-location';
+@import './layouts/modals/example-modal';

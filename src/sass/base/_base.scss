@@ -3,6 +3,38 @@ body {
   font-weight: 400;
   letter-spacing: 0.04em;
   color: $classic-black;
+
+  background-color: $text-and-modal-white;
+  // background-image: url(../images/background_mobile.jpg);
+  background-position: center;
+  background-size: contain;
+  background-repeat: repeat;
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    // background-image: url(../images/background_mobile@2x.jpg);
+  }
+
+  @media screen and (min-width: 768px) {
+    // background-image: url(../images/background_tablet.jpg);
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      // background-image: url(../images/background_tablet@2x.jpg);
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    // background-image: url(../images/background_desktop.jpg);
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      // background-image: url(../images/background_desktop@2x.jpg);
+    }
+  }
 }
 /* Стили для обнуления верхних отступов у элементов */
 h1,
