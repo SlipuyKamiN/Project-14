@@ -60,7 +60,7 @@
   align-items: center;
   padding: 4px 22px;
 
-  background: $brand-primary-color;
+  background-color: $brand-primary-color;
 
   border-radius: 4px;
   margin-bottom: 20px;
@@ -115,7 +115,9 @@
 
   color: $card-brown-color;
   margin-bottom: 24px;
-
+  @media screen and (max-width: 345px) {
+    width: 190px;
+  }
   @media screen and (min-width: 768px) {
     font-size: 14px;
     margin-bottom: 32px;
@@ -125,7 +127,7 @@
   }
 }
 
-.contact--gray-line {
+.contact__gray-line {
   width: 100%;
   border-top: 1px solid #e1e1e1;
   margin-bottom: 24px;
@@ -142,7 +144,7 @@
     row-gap: 12px;
   }
 }
-.contact__work-time--days {
+.contact__work-day {
   font-weight: 500;
   font-size: 12px;
   line-height: 186%;
@@ -157,7 +159,7 @@
     font-size: 16px;
   }
 }
-.contact__work-time--times {
+.contact__work-time {
   font-weight: 500;
   font-size: 12px;
   line-height: 186%;
@@ -205,21 +207,22 @@
     flex-direction: row;
   }
 }
-.contact__button--location {
+.contact__button {
   min-width: 196px;
-  background-color: $brand-primary-color;
   border-radius: 10px;
-  border: none;
   padding: 12px 40px;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 4px;
   cursor: pointer;
+}
+.contact__button--location {
+  background-color: $brand-primary-color;
+  border: none;
   transition-property: background-color, color;
   transition-duration: $action-total-time;
   transition-timing-function: $action-cubic-time;
-  outline: none;
   &:hover {
     background-color: $btn-hover-green;
   }
@@ -231,22 +234,13 @@
 
 .contact__button--franchise {
   border: 2px solid $brand-primary-color;
-  border-radius: 10px;
-  background-color: transparent;
 
-  min-width: 196px;
-
-  padding: 12px 40px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 4px;
-  cursor: pointer;
+  background-color: $bgc-primary-color;
 
   transition-property: border, color;
   transition-duration: $action-total-time;
   transition-timing-function: $action-cubic-time;
-  outline: none;
+
   &:hover {
     border-color: $btn-hover-green;
   }
@@ -255,7 +249,7 @@
     color: $classic-white;
   }
 }
-.contact__buttons--arrow {
+.contact__button-arrow {
   fill: $text-primary-black;
 }
 
