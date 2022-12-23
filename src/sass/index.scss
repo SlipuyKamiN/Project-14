@@ -2,16 +2,19 @@
 @import './base/base';
 @import './utils/visually-hidden';
 
-@import './components/a-header/header';
-@import './components/b-hero/hero';
-@import './components/c-products/products';
-@import './components/d-about/about';
-@import './components/e-advantages/advantages';
-@import './components/f-reviews/gallery';
-@import './components/f-reviews/reviews';
-@import './components/g-contacts/contacts';
-@import './components/h-footer/footer';
+@import './layouts/a-header';
+@import './layouts/b-hero';
+@import './layouts/c-products';
+@import './layouts/d-about';
+@import './layouts/e-advantages';
+@import './layouts/f-gallery';
+@import './layouts/g-reviews';
+@import './layouts/h-contacts';
+@import './layouts/i-footer';
 
-@import './components/i-modal-set1/modal-set1';
-@import './components/j-modal-set2/modal-set2';
-@import './components/j-modal-set2/example-modal';
+@import './layouts/modals/modal-product';
+@import './layouts/modals/modal-ingredients';
+@import './layouts/modals/modal-read-more';
+@import './layouts/modals/modal-franchise';
+@import './layouts/modals/modal-location';
+@import './layouts/modals/example-modal';
