@@ -1,0 +1,95 @@
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.link {
+  text-decoration: none;
+  color: currentColor;
+}
+
+.cards-set {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--indent);
+}
+.cards-set__item {
+  flex-basis: calc(
+    (100% - (var(--indent) * (var(--cards-in-row) - 1))) / (var(--cards-in-row))
+  );
+}
+
+.products {
+  padding-top: 61px;
+  padding-bottom: 60px;
+
+  background-color: #fcfcfc;
+  background-image: url(../images/products/bcg/Backgroud_mobile_s@1x.jpg);
+}
+.products__description {
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.22;
+  text-align: center;
+  text-transform: uppercase;
+  color: #131313;
+
+  padding-bottom: 12px;
+}
+.products__title {
+  font-family: 'Seymour One';
+  font-size: 30px;
+  line-height: 1.27;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #131313;
+
+  padding-bottom: 148px;
+}
+.products__card {
+  --indent: 168px;
+  --items: 1;
+
+  text-align: center;
+}
+.products__item {
+  align-items: center;
+
+  border-radius: 24px;
+
+  width: 280px;
+  height: 420px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.products__item-c1 {
+  background: #aec6a5;
+}
+.products__item-c2 {
+  background: #efd478;
+}
+.products__item-c3 {
+  background: #d6936d;
+}
+.products-wrapper {
+  padding: 123px 40px 16px 40px;
+}
+.products-wrapper__title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #131313;
+  padding-bottom: 40px;
+}
+.products-wrapper__description {
+  font-size: 14px;
+  line-height: 1.76;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: #131313;
+  padding-bottom: auto;
+}
