@@ -1,0 +1,27 @@
+
+<section class="gallery">
+
+    <div class="container gallery-container">
+        
+        <h2 class="visually-hidden">Gallery</h2>
+        <div class="gallery-img">
+            <picture>
+              <source media="(min-width:320px)" srcset="
+              ./images/gallery/gallery-mob1x.jpg 1x,
+              ./images/gallery/gallery-mob2x.jpg 2x "/>
+
+              <source media="(min-width: 768px)" srcset="
+              ./images/gallery/gallery-tablet1x.jpg 1x,
+              ./images/gallery/gallery-tablet2x.jpg  2x
+            " />
+
+            <source media="(min-width: 1200px)" srcset="
+              ./images/gallery/gallery-desktop1x.jpg 1x,
+              ./images/gallery/gallery-desktop2x.jpg  2x
+            " />
+            <img class="gallery-image" src="./images/gallery/gallery-mob1x.jpg"/>
+
+            </picture>
+        </div>
+    </div>
+</section>
