@@ -153,6 +153,13 @@
 
   transform: translateY(-16px);
 }
+.arrow {
+  fill: #131313;
+}
+.arrow:hover,
+.arrow:focus {
+  fill: #fcfcfc;
+}
 .products-wrapper__title {
   font-weight: 700;
   font-size: 20px;
