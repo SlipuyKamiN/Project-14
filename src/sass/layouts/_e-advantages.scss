@@ -1,7 +1,9 @@
+.advantages {
+    background-color: $bgc-primary-color;
+}
+
 .advantages__container {
     padding-bottom: 32px;
-
-    background-color: $bgc-primary-color;
 
     @media screen and (min-width: 768px) {
         padding-bottom: 60px;
