@@ -89,3 +89,8 @@ address {
     padding: 0 16px;
   }
 }
+
+/* For smooth page scrolling */
+html {
+  scroll-behavior: smooth;
+}

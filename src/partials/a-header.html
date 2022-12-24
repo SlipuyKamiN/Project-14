@@ -1,0 +1,107 @@
+<header class="header">
+  <div class="container header__container">
+    <nav class="nav">
+      <a href="./index.html">
+        <img
+          class="logo"
+          srcset="
+            ./images/header/logo_mobile@1x_40.png    40w,
+            ./images/header/logo_tablet@1x_48.png    48w,
+            ./images/header/logo_desktop@1x_60.png   60w,
+            ./images/header/logo_mobile@2x_80.png    80w,
+            ./images/header/logo_tablet@2x_96.png    96w,
+            ./images/header/logo_desktop@2x_120.png 120w
+          "
+          sizes="(min-width: 1200px) 60px, (min-width: 768px) 48px, (min-width: 480px) 40px, 100vw"
+          src="./images/header/logo_mobile@1x_40.png"
+          alt="Logo"
+          loading="lazy"
+          width="40"
+          height="38"
+        />
+      </a>
+      <ul class="nav__list">
+        <li class="nav__item">
+          <a href="#" class="nav__link">Home</a>
+        </li>
+        <li class="nav__item">
+          <a href="#section-about" class="nav__link">How it’s made?</a>
+        </li>
+        <li class="nav__item">
+          <a href="#section-products" class="nav__link">Our products</a>
+        </li>
+        <li class="nav__item">
+          <a href="#section-contacts" class="nav__link">Contact</a>
+        </li>
+      </ul>
+    </nav>
+    <button
+      class="burger__button js-open-menu"
+      aria-expanded="false"
+      aria-controls="mobile-menu"
+    >
+      <svg width="32" height="32" class="burger__icon">
+        <use href="./images/icons.svg#icon-drop-closed"></use>
+      </svg>
+    </button>
+    <button
+      class="header__buy-btn buy-btn js-open-modal"
+      data-modal="modal-buy-now"
+    >
+      Buy now
+      <svg class="icon-btn-arrow" width="12" height="12">
+        <use href="./images/icons.svg#icon-btn-arrow"></use>
+      </svg>
+    </button>
+  </div>
+</header>
+
+<!-- Mobile menu -->
+
+<div class="menu__container js-menu-container" id="mobile-menu">
+  <button class="menu__close-btn js-close-menu">
+    <svg class="menu__close-icon" width="32" height="32">
+      <use href="./images/icons.svg#icon-close"></use>
+    </svg>
+  </button>
+  <img
+    class="logo"
+    srcset="
+      ./images/header/logo_mobile@1x_40.png    40w,
+      ./images/header/logo_tablet@1x_48.png    48w,
+      ./images/header/logo_desktop@1x_60.png   60w,
+      ./images/header/logo_mobile@2x_80.png    80w,
+      ./images/header/logo_tablet@2x_96.png    96w,
+      ./images/header/logo_desktop@2x_120.png 120w
+    "
+    sizes="(min-width: 1200px) 60px, (min-width: 768px) 48px, (min-width: 480px) 40px, 100vw"
+    src="./images/header/logo_mobile@1x_40.png"
+    alt="Logo"
+    loading="lazy"
+    width="40"
+    height="38"
+  />
+  <ul class="menu__list">
+    <li class="menu__item">
+      <a href="#" class="menu__link link">Home</a>
+    </li>
+    <li class="menu__item">
+      <a href="#section-about" class="menu__link link">How it’s made?</a>
+    </li>
+    <li class="menu__item">
+      <a href="#section-products" class="menu__link link">Our products</a>
+    </li>
+    <li class="menu__item">
+      <a href="#section-contacts" class="menu__link link">Contact</a>
+    </li>
+  </ul>
+  <button
+    class="menu__buy-btn buy-btn js-open-modal"
+    data-modal="modal-buy-now"
+  >
+    Buy now
+    <svg class="icon-btn-arrow" width="12" height="12">
+      <use href="./images/icons.svg#icon-btn-arrow"></use>
+    </svg>
+  </button>
+</div>
