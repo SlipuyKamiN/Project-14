@@ -20,12 +20,14 @@
  @media screen and (min-width: 768px) {
     background-image: url("../images/hero/dots_tab@1x.png");
     background-size: auto;
+    
 
     // retina tablet screen
     @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     background-image: url("../images/hero/dots_tab@2x.png");
+    background-size: 768px 68px;
     }
  }
 
@@ -38,6 +40,7 @@
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     background-image: url("../images/hero/dots_desk@2x.png");
+    background-size: 1200px 383px;
     }
     }
 }
@@ -48,6 +51,7 @@
 
     background-image: url("../images/hero/big-ice_mob@1x.png");
     background-repeat: no-repeat;
+   
     background-position: left calc(50% + 10px) bottom 0;
 
     // retina mobil screen
@@ -55,6 +59,7 @@
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     background-image: url("../images/hero/big-ice_mob@2x.png");
+   background-size: 177px 217px;
     }
 
  @media screen and (min-width: 375px) {
@@ -69,13 +74,15 @@
 
     background-image: url("../images/hero/big-ice_tab@1x.png"), url("../images/hero/more-ice-cream_tab@1x.png");
     background-position: left 408px bottom 0, left 32px bottom 12px;
+    
 
     // retina tablet screen
  @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    background-image: url("../images/hero/big-ice_tab@1x.png"), url("../images/hero/more-ice-cream_tab@1x.png"), url("../images/hero/dots_tab@1x.png");
-    }
+    background-image: url("../images/hero/big-ice_tab@1x.png"), url("../images/hero/more-ice-cream_tab@1x.png");
+   background-size: 268px 329px, 152px 152px;
+   }
     }
 
     // Desktop screen
@@ -93,6 +100,7 @@
     (min-resolution: 2dppx) {
     background-image: url("../images/hero/big-ice_desk@2x.png"),
     url("../images/hero/more-ice-cream_desk@2x.png");
+    background-size: 456px 566px, 225px 225px;
         }
     }
 }
