@@ -1,8 +1,10 @@
+.about {
+    background-color: $bgc-primary-color;
+}
+
 .about__container {
     padding-top: 60px;
     padding-bottom: 50px;
-
-    background-color: $bgc-primary-color;
 
     @media screen and (min-width: 768px) {
         padding-bottom: 80px;
