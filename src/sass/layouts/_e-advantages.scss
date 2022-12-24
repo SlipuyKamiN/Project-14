@@ -1,9 +1,7 @@
-.advantages {
-    background-color: $bgc-primary-color;
-}
-
 .advantages__container {
     padding-bottom: 32px;
+
+    background-color: $bgc-primary-color;
 
     @media screen and (min-width: 768px) {
         padding-bottom: 60px;
@@ -41,10 +39,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 16px;
 
     @media screen and (min-width: 768px) {
-        gap: 0;
         width: calc(((768px - 32px * 2) - (80px * (3 - 1)) - (44px * 2)) / (3));
     }
 
@@ -53,35 +49,25 @@
     }
 }
 
-.advantages__icon-wrapper {
+.advantages__number {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background-color: $brand-primary-color;
 
-    @media screen and (min-width: 768px) {
-        margin-bottom: 32px;
-    }
+    margin-bottom: 16px;
 
-    @media screen and (min-width: 1200px) {
-        margin-bottom: 40px;
-    }
-
-}
-
-.advantages__number {
     font-weight: 700;
     font-size: 36px;
     line-height: calc(44 / 36);
 
     text-align: center;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
 
     color: $text-and-modal-white;
+
+    @media screen and (max-width: 767.98px) {
+        text-transform: uppercase;
+    }
 
     @media screen and (min-width: 768px) {
         margin-bottom: 12px;
@@ -96,9 +82,38 @@
     }
 }
 
+.advantages__number::before {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 50px;
+    margin-bottom: 16px;
+
+    border-radius: 50%;
+
+    @media screen and (min-width: 768px) {
+        margin-bottom: 32px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 40px;
+    }
+}
+
+.advantages__item:nth-child(1) .advantages__number::before {
+    background-image: url(../images/advantages/cow.png);
+}
+
+.advantages__item:nth-child(2) .advantages__number::before {
+    background-image: url(../images/advantages/weight.png);
+}
+
+.advantages__item:nth-child(3) .advantages__number::before {
+    background-image: url(../images/advantages/ice-crema.png);
+}
+
 .advantages__description {
-    padding-left: 45px;
-    padding-right: 45px;
+    max-width: 230px;
 
     font-weight: 700;
     font-size: 12px;
@@ -119,5 +134,6 @@
     @media screen and (min-width: 1200px) {
         font-size: 16px;
         line-height: calc(28 / 16);
+        letter-spacing: 0.02em;
     }
 }
