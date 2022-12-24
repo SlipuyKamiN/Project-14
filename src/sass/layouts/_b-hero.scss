@@ -4,6 +4,7 @@
     background-repeat: no-repeat;
     background-position: center bottom 0;
     background-size: 100%;
+ 
 
     // retina mobil screen
  @media (min-device-pixel-ratio: 2),
@@ -80,7 +81,7 @@
  @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    background-image: url("../images/hero/big-ice_tab@1x.png"), url("../images/hero/more-ice-cream_tab@1x.png");
+    background-image: url("../images/hero/big-ice_tab@2x.png"), url("../images/hero/more-ice-cream_tab@2x.png");
    background-size: 268px 329px, 152px 152px;
    }
     }
@@ -102,24 +103,20 @@
     url("../images/hero/more-ice-cream_desk@2x.png");
     background-size: 456px 566px, 225px 225px;
         }
-    }
+    } 
 }
 
 .hero__thumb {
     display: flex;
     justify-content: space-between;
-
 }
 
 .hero__title {
-
     width: 247px;
     margin-bottom: 32px;
     font-family: 'Seymour One';
-    font-weight: 400;
     font-size: 26px;
     line-height: calc(33 / 26);
-    letter-spacing: 0.04em;
     text-transform: uppercase;
 
     color: $text-and-modal-white;
@@ -137,7 +134,7 @@
     }
 }
 
-.hero__title--bid-sitze {
+.hero__title--big-sitze {
     font-size: 34px;
     line-height: 96.5%;
 
@@ -236,8 +233,6 @@
     width: 150px;
     height: 85px;
     margin-bottom: 12px;
-
-    font-weight: 400;
     font-size: 12px;
     line-height: calc(17 / 12);
 
@@ -274,7 +269,6 @@
     font-size: 28px;
     line-height: calc(34 / 28);
     text-align: right;
-    letter-spacing: 0.04em;
     text-transform: uppercase;
 
     color: $text-primary-black;
@@ -286,7 +280,6 @@
 }
 
 .places__name {
-    font-weight: 400;
     font-size: 8px;
     line-height: calc(10 / 8);
     text-align: right;
