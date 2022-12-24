@@ -13,8 +13,13 @@ footer {
         padding-top: 120px;
     }
   }
+
+  .footer__text{
+    margin-bottom:60px;
+  }
   .footer__text--small {
-    padding-left: 2px;
+    margin-bottom: 16px;
+    margin-left: 2px;
     width: 250px;
     font-weight: 700;
     font-size: 18px;
@@ -23,13 +28,12 @@ footer {
     color: $text-and-modal-white;
   
     @media screen and (min-width: 768px) {
-        padding-right:0;
+        margin-bottom: 8px;
         width: 352px;
         font-size: 26px;
         line-height: 1.23;
     }
     @media screen and (min-width: 1200px) {
-        padding-right:0;
         width: 510px;
         font-weight: 400;
         font-size: 30px;
@@ -37,8 +41,6 @@ footer {
   }
   
   .footer__text--large {
-    display: flex;
-    padding-top: 16px;
     width: 200px;
     font-weight: 700;
     font-size: 34px;
@@ -47,7 +49,7 @@ footer {
     text-transform: uppercase;
     color: $text-and-modal-white;
     @media screen and (min-width: 768px) {
-      padding-top: 0;
+        padding-top: 0;
         width: 352px;
         font-size: 48px;
         line-height: 1.23;
@@ -86,24 +88,22 @@ footer {
   .footer__socials {
     display: flex;
     justify-content: right;
-    padding-top: 60px;
-    padding-bottom: 20px;
+    margin-bottom: 20px;
     gap: 20px;
     @media screen and (min-width: 768px) {
-        padding-top: 61px;
-        padding-bottom: 34px;
+        margin-top: 61px;
+        margin-bottom: 34px;
         gap: 30px;
      }
      @media screen and (min-width: 1200px) {
-        padding-top: 18px;
-        padding-bottom: 40px;
+        margin-top: 18px;
+        margin-bottom: 40px;
   
      }
   }
   .footer__communication {
     display: flex;
     text-decoration: none;
-    font-style: normal;
     font-weight: 700;
     font-size: 12px;
     line-height: 1.83;
@@ -113,6 +113,10 @@ footer {
     @media screen and (min-width: 768px) {
         font-size: 14px;
         line-height: 1.86;
+     }
+     @media screen and (min-width: 1200px) {
+      font-size: 16px;
+      line-height: 1.88;
      }
   }
   .footer__communication--number {
@@ -144,7 +148,7 @@ footer {
     color: #7a7a7a;
     @media screen and (min-width: 768px) {
         font-size: 14px;
-        line-height: 1,86;
+        line-height: 1.86;
         letter-spacing: 0.02em;
         padding-top: 12px;
         padding-bottom: 12px;
