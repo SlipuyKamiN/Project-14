@@ -115,8 +115,6 @@
 }
 
 .advantages__description {
-    max-width: 230px;
-
     font-weight: 700;
     font-size: 12px;
     line-height: calc(20 / 12);
@@ -124,6 +122,10 @@
     text-align: center;
 
     color: $text-and-modal-white;
+
+    @media screen and (max-width: 767.98px) {
+        max-width: 230px;
+    }
 
     @media screen and (min-width: 768px) {
         padding: 0;
