@@ -6,12 +6,19 @@ footer {
     @media screen and (min-width: 768px) {
        display: flex;
        padding-top: 40px;
+<<<<<<< Updated upstream
        padding-bottom: 32px;
+=======
+       
+>>>>>>> Stashed changes
        justify-content: space-between;
     }
     @media screen and (min-width: 1200px) {
         padding-top: 120px;
+<<<<<<< Updated upstream
         padding-bottom: 60px;
+=======
+>>>>>>> Stashed changes
     }
   }
   .footer__text--small {
@@ -48,7 +55,11 @@ footer {
     text-transform: uppercase;
     color: $text-and-modal-white;
     @media screen and (min-width: 768px) {
+<<<<<<< Updated upstream
       padding-top: 0px;
+=======
+      padding-top: 0;
+>>>>>>> Stashed changes
         width: 352px;
         font-size: 48px;
         line-height: 1.23;
@@ -126,9 +137,20 @@ footer {
     justify-content: center;
   
     @media screen and (min-width: 768px) {
+<<<<<<< Updated upstream
         margin-top: 0;
         
     }
+=======
+        margin-top: 32;
+        
+    }
+    @media screen and (min-width: 1200px) {
+        margin-top: 60px;
+        margin-right: 16px;
+        margin-left: 16px;
+    }
+>>>>>>> Stashed changes
   }
   .сopyright__text {
     padding: 20px 60px;
