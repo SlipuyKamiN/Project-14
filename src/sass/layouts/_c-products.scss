@@ -116,6 +116,10 @@
   border-radius: 150px;
 
   transform: translateY(-50%) translateX(-50%);
+  @media screen and (min-width: 1200px) {
+    width: 302px;
+    height: 302px;
+  }
 }
 .products__thumb-color1 {
   background: linear-gradient(
@@ -152,6 +156,20 @@
   border-radius: 150px;
 
   transform: translateY(-16px);
+}
+.products__link {
+  position: absolute;
+
+  bottom: 16px;
+  left: 50%;
+
+  transform: translateX(-50%);
+  @media screen and (min-width: 768px) {
+    bottom: 12px;
+  }
+  @media screen and (min-width: 1200px) {
+    bottom: 60px;
+  }
 }
 .arrow {
   fill: #131313;
