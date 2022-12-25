@@ -7,34 +7,42 @@
         <img
           class="about__img"
           srcset="
-            ./images/about/cow-279.png 279w,
-            ./images/about/cow-330.png 330w,
-            ./images/about/cow-490.png 490w,
-            ./images/about/cow-558.png 558w,
-            ./images/about/cow-660.png 660w,
-            ./images/about/cow-980.png 980w
+            ./images/about/cow-279.jpg 279w,
+            ./images/about/cow-330.jpg 330w,
+            ./images/about/cow-490.jpg 490w,
+            ./images/about/cow-558.jpg 558w,
+            ./images/about/cow-660.jpg 660w,
+            ./images/about/cow-980.jpg 980w
           "
           sizes="(min-width: 1200px) 490px, (min-width: 768px) 330px, (min-width: 480px) 279px, 100vw"
-          src="./images/about/cow-279.png"
+          src="./images/about/cow-279.jpg"
           alt="Cow"
           loading="lazy"
         />
       </div>
       <div class="about_content">
-        <p class="about__text">
-          Ice is a place where you will become not only a little happier, but
-          also healthier. Health is the main value for us, and we follow it when
-          creating our handmade desserts.
-        </p>
-        <p class="about__text">
-          We use traditional recipes and 100% natural ingredients. Our products
-          are so natural that they can be given to children from the age of
-          three years. Sweets lovers can expect 55 types of ice cream, 15 types
-          of coffee and 23 milkshakes.
-        </p>
-        <p class="about__text about__text--last">
-          This is enough to choose ice cream and coffee for any mood!
-        </p>
+        <ul class="about__list">
+          <li class="about__item">
+            <p class="about__text about__text--first">
+              Ice is a place where you will become not only a little happier,
+              but also healthier. Health is the main value for us, and we follow
+              it when creating our handmade desserts.
+            </p>
+          </li>
+          <li class="about__item">
+            <p class="about__text about__text--second">
+              We use traditional recipes and 100% natural ingredients. Our
+              products are so natural that they can be given to children from
+              the age of three years. Sweets lovers can expect 55 types of ice
+              cream, 15 types of coffee and 23 milkshakes.
+            </p>
+          </li>
+          <li class="about__item">
+            <p class="about__text about__text--last">
+              This is enough to choose ice cream and coffee for any mood!
+            </p>
+          </li>
+        </ul>
         <button
           class="about__btn js-open-modal"
           type="button"
