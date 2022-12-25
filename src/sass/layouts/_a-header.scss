@@ -73,7 +73,7 @@
   padding: 0;
   color: $classic-white;
   background-color: transparent;
-  cursor: pointer;
+  cursor: $pointer;
   border: none;
   outline: none;
 
@@ -102,7 +102,7 @@
   line-height: calc(17 / 14);
   border: none;
   outline: none;
-  cursor: pointer;
+  cursor: $pointer;
   border-radius: 10px;
   background-color: $brand-primary-color;
 
@@ -172,7 +172,7 @@
   color: $text-and-modal-white;
   background-color: transparent;
   border: none;
-  cursor: pointer;
+  cursor: $pointer;
 
   transition: color $action-total-time $action-cubic-time;
 
