@@ -1,0 +1,78 @@
+<!-- Buy now -->
+<div class="overlay js-overlay-modal">
+  <div class="modal" data-modal="1">
+    <svg
+      class="modal__cross js-modal-close"
+      width="20"
+      height="20"
+      viewBox="0 0 24 24"
+    >
+      <use href="./images/icons.svg#icon-close-smaller"></use>
+    </svg>
+    <strong class="modal-label">Buy now</strong>
+    <ul class="modal__list">
+      <li class="modal__item">
+        <div class="modal__thumb ice-cream">
+          <img
+            class="modal__img"
+            srcset="./images/modals/img1.jpg 1x, ./images/modals/img1@2x.jpg 2x"
+            src="./images/modals/img1.jpg"
+            alt="Ice cream"
+          />
+        </div>
+        <p class="modal__title">Ice cream</p>
+      </li>
+      <li class="modal__item">
+        <div class="modal__thumb ice-coffee">
+          <img
+            class="modal__img"
+            srcset="./images/modals/img2.jpg 1x, ./images/modals/img2@2x.jpg 2x"
+            src="./images/modals/img2.jpg"
+            alt="Ice coffee"
+          />
+        </div>
+        <p class="modal__title">Ice coffee</p>
+      </li>
+      <li class="modal__item">
+        <div class="modal__thumb milkshake">
+          <img
+            class="modal__img"
+            srcset="./images/modals/img3.jpg 1x, ./images/modals/img3@2x.jpg 2x"
+            src="./images/modals/img3.jpg"
+            alt="Milkshake"
+          />
+        </div>
+        <p class="modal__title">Milkshake</p>
+      </li>
+    </ul>
+    <form class="buy-form" name="buy_form">
+      <input
+        class="modal__input"
+        type="text"
+        name="username"
+        placeholder="Name"
+        required
+        pattern="^[a-zA-Z]+\s[a-zA-Z]+$"
+      />
+      <input
+        class="modal__input"
+        type="text"
+        name="user_phone"
+        placeholder="Phone"
+        required
+        pattern="\+?[0-9\s\-\(\)]+"
+        minlength="13"
+        maxlength="13"
+      />
+      <textarea
+        class="modal__input"
+        name=""
+        id=""
+        cols="20"
+        rows="3"
+        placeholder="Comment"
+      ></textarea>
+      <button class="btn" type="submit">Submit</button>
+    </form>
+  </div>
+</div>
