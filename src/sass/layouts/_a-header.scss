@@ -93,7 +93,7 @@
   width: 152px;
   height: 42px;
   padding: 12px 35px 12px 36px;
-
+  justify-content: space-between;
   align-items: center;
   text-align: center;
   font-family: inherit;
@@ -124,7 +124,7 @@
   display: none;
 
   @media screen and (min-width: 768px) {
-    display: inline;
+    display: flex;
     margin-left: 32px;
   }
   @media screen and (min-width: 1200px) {
