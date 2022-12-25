@@ -1,7 +1,7 @@
 <body>
   <main>
     <!--Products-->
-    <section class="products">
+    <section class="products" id="section-products">
       <div class="container">
         <p class="products__description">100% natural</p>
         <h2 class="products__title">products</h2>
@@ -16,8 +16,8 @@
                   <source
                     media="(min-width: 1200px)"
                     srcset="
-                      ./images/products/kelsey-curtis-G5ZenftPPOA-unsplash_2_302.jpg 1x,
-                      ./images/products/kelsey-curtis-G5ZenftPPOA-unsplash_2_604.jpg 2x
+                      ./images/products/kelsey-curtis_302.jpg 1x,
+                      ./images/products/kelsey-curtis_604.jpg 2x
                     "
                   />
                   <!-- tablet and phone screen -->
@@ -25,13 +25,13 @@
                   <source
                     media="(max-width: 1199px)"
                     srcset="
-                      ./images/products/kelsey-curtis-G5ZenftPPOA-unsplash_200.jpg 1x,
-                      ./images/products/kelsey-curtis-G5ZenftPPOA-unsplash_400.jpg 2x
+                      ./images/products/kelsey-curtis_200.jpg 1x,
+                      ./images/products/kelsey-curtis_400.jpg 2x
                     "
                   />
                   <img
                     class="products__img"
-                    src="./images/products/kelsey-curtis-G5ZenftPPOA-unsplash_2_302.jpg"
+                    src="./images/products/kelsey-curtis_302.jpg"
                     alt="Морозиво"
                     loading="lazy"
                   />
@@ -51,9 +51,11 @@
                 rel="noopener noreferrer"
                 aria-label="further"
               >
-                <svg class="arrow" width="40" height="16">
-                  <use href="./images/icons.svg#icon-arrow"></use>
-                </svg>
+                <button class="products__button">
+                  <svg class="arrow" width="40" height="16">
+                    <use href="./images/icons.svg#icon-arrow"></use>
+                  </svg>
+                </button>
               </a>
             </div>
           </li>
@@ -101,9 +103,11 @@
               rel="noopener noreferrer"
               aria-label="further"
             >
-              <svg class="arrow" width="40" height="16">
-                <use href="./images/icons.svg#icon-arrow"></use>
-              </svg>
+              <button class="products__button">
+                <svg class="arrow" width="40" height="16">
+                  <use href="./images/icons.svg#icon-arrow"></use>
+                </svg>
+              </button>
             </a>
           </li>
 
@@ -149,9 +153,11 @@
               rel="noopener noreferrer"
               aria-label="further"
             >
-              <svg class="arrow" width="40" height="16">
-                <use href="./images/icons.svg#icon-arrow"></use>
-              </svg>
+              <button class="products__button">
+                <svg class="arrow" width="40" height="16">
+                  <use href="./images/icons.svg#icon-arrow"></use>
+                </svg>
+              </button>
             </a>
           </li>
         </ul>

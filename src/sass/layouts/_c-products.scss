@@ -21,7 +21,7 @@
   text-transform: uppercase;
   color: #131313;
 
-  padding-bottom: 12px;
+  margin-bottom: 12px;
 
   @media screen and (min-width: 768px) {
     font-size: 22px;
@@ -40,17 +40,17 @@
   text-transform: uppercase;
   color: #131313;
 
-  padding-bottom: 148px;
+  margin-bottom: 148px;
 
   @media screen and (min-width: 768px) {
     font-size: 34px;
     line-height: 1.26;
-    padding-bottom: 200px;
+    margin-bottom: 200px;
   }
   @media screen and (min-width: 1200px) {
     font-size: 36px;
     line-height: 1.25;
-    padding-bottom: 303px;
+    margin-bottom: 303px;
   }
 }
 .products__card {
@@ -79,9 +79,13 @@
 
   @media screen and (min-width: 768px) {
     height: 428px;
+    box-shadow: 0px 5.26027px 19.726px rgba(212, 20, 67, 0.1);
+    border-radius: 15.7808px;
   }
   @media screen and (min-width: 1200px) {
     height: 536px;
+    box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+    border-radius: 24px;
   }
 }
 .products__item-c1 {
@@ -155,7 +159,14 @@
   height: 100%;
   border-radius: 150px;
 
-  transform: translateY(-16px);
+  transform: translateY(-11px);
+
+  @media screen and (min-width: 768px) {
+    transform: translateY(-12px);
+  }
+  @media screen and (min-width: 1200px) {
+    transform: translateY(-16px);
+  }
 }
 .products__link {
   position: absolute;
@@ -164,12 +175,17 @@
   left: 50%;
 
   transform: translateX(-50%);
+
   @media screen and (min-width: 768px) {
     bottom: 12px;
   }
   @media screen and (min-width: 1200px) {
     bottom: 60px;
   }
+}
+.products__button {
+  background: transparent;
+  border: none;
 }
 .arrow {
   fill: #131313;
@@ -186,14 +202,14 @@
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: #131313;
-  padding-bottom: 40px;
+  margin-bottom: 40px;
 
   @media screen and (min-width: 768px) {
     font-size: 22px;
     line-height: 1.23;
   }
   @media screen and (min-width: 1200px) {
-    font-size: 36px;
+    font-size: 30px;
   }
 }
 .products-wrapper__description {
@@ -202,4 +218,8 @@
   text-align: center;
   letter-spacing: 0.04em;
   color: #131313;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 16px;
+  }
 }
