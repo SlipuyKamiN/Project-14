@@ -1,5 +1,5 @@
 
-.container{
+.reviwes__container{
   overflow: hidden;
   padding-top: 80px;
   padding-bottom: 40px;
@@ -50,9 +50,7 @@ line-height: calc(30/16);
 }
 
 .reviews__block{
-    margin-left: 20px;
-    margin-right: 20px;
-    background-color: $bgc-primary-color;
+      background-color: $bgc-primary-color;
     border-radius: 10px;
     padding: 35px 39px;
 
