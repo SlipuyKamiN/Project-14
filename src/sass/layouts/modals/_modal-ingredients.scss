@@ -246,6 +246,7 @@
   // max-width: 368px;
   // margin-bottom: 16px;
   height: 42px;
+  // outline: none;
   background: rgba(248, 210, 78, 0.1);
   border: 1px solid #84a178;
   border-radius: 10px;
@@ -253,6 +254,15 @@
   @media screen and (min-width: 480px) {
     width: 368px;
   }
+}
+.modal__input:not(:placeholder-shown):required:valid {
+  // border-color: green;
+  outline-color: green;
+}
+
+.modal__input:not(:placeholder-shown):required:invalid {
+  // border-color: red;
+  outline-color: red;
 }
 .modal__label-textarea {
   margin-bottom: 24px;

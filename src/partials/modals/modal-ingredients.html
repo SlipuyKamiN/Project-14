@@ -77,10 +77,24 @@
   </ul>
   <form class="modal__form">
     <label class="modal__label"
-      ><input class="modal__input" type="text" placeholder="Name"
+      ><input
+        class="modal__input"
+        type="text"
+        placeholder="Name"
+        required
+        pattern="^[a-zA-Z]+\s[a-zA-Z]+$"
+        title="Username must be two words separated by space."
     /></label>
     <label class="modal__label"
-      ><input class="modal__input" type="tel" placeholder="Phone"
+      ><input
+        class="modal__input"
+        type="tel"
+        placeholder="Phone"
+        required
+        pattern="\+?[0-9\s\-\(\)]+"
+        minlength="13"
+        maxlength="13"
+        title="Phone number must be thirteen symbols."
     /></label>
     <label class="modal__label-textarea">
       <textarea
