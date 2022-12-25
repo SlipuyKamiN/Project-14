@@ -21,13 +21,12 @@
   height: auto;
   margin: 0 auto;
 
-  // @media screen and (min-width: 320px) {
-  //     width: 280px;
-  // }
-  // @media screen and (min-width: 768px) {
-  //     width: 704px;
-  // }
-  // @media screen and (min-width: 1200px) {
-  //     width: 1013px;
-  // }
+  border-radius: 8px;
+
+  @media screen and (min-width: 768px) {
+    border-radius: 18px;
+  }
+  @media screen and (min-width: 1200px) {
+    border-radius: 24px;
+  }
 }
