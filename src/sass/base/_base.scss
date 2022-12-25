@@ -7,8 +7,9 @@ body {
   background-color: $text-and-modal-white;
   background-image: url(../images/background_mobile.jpg);
   background-position: center;
-  background-size: contain;
+  background-size: inherit;
   background-repeat: repeat;
+  background-attachment: fixed;
 
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
