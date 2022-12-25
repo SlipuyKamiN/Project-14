@@ -168,8 +168,10 @@
     transform: translateY(-16px);
   }
 }
-.products__link {
+.products__button {
   position: absolute;
+  background: transparent;
+  border: none;
 
   bottom: 16px;
   left: 50%;
@@ -183,10 +185,7 @@
     bottom: 60px;
   }
 }
-.products__button {
-  background: transparent;
-  border: none;
-}
+
 .arrow {
   fill: #131313;
 }
