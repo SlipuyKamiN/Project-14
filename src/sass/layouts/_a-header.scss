@@ -50,13 +50,15 @@
   }
 }
 .nav__link {
+  padding: 12px 0;
   font-weight: 700;
   font-size: 16px;
   line-height: calc(20 / 16);
   color: $text-and-modal-white;
   transition: color $action-total-time $action-cubic-time;
 
-  &:hover {
+  &:hover,
+  &:focus {
     color: $brand-primary-color;
   }
 }
@@ -87,7 +89,7 @@
 }
 
 .buy-btn {
-  display: inline;
+  display: flex;
   width: 152px;
   height: 42px;
   padding: 12px 35px 12px 36px;
@@ -187,10 +189,10 @@
   fill: currentColor;
 }
 .menu__list {
-  margin-top: 51px;
+  padding-top: 51px;
 
   @media screen and (min-width: 768px) {
-    margin-top: 76px;
+    padding-top: 76px;
   }
 }
 .menu__item:not(:last-child) {
@@ -208,7 +210,8 @@
 
   transition: color $action-total-time $action-cubic-time;
 
-  &:hover {
+  &:hover,
+  &:focus {
     color: $text-primary-black;
   }
 
@@ -226,4 +229,3 @@
     display: none;
   }
 }
-
