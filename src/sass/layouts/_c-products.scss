@@ -1,0 +1,225 @@
+.cards-set {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--indent);
+}
+.cards-set__item {
+  flex-basis: calc(
+    (100% - (var(--indent) * (var(--cards-in-row) - 1))) / (var(--cards-in-row))
+  );
+}
+
+.products {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.products__description {
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.22;
+  text-align: center;
+  text-transform: uppercase;
+  color: #131313;
+
+  margin-bottom: 12px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 22px;
+    line-height: 1.23;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 30px;
+  }
+}
+.products__title {
+  font-family: 'Seymour One';
+  font-size: 30px;
+  line-height: 1.27;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #131313;
+
+  margin-bottom: 148px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 34px;
+    line-height: 1.26;
+    margin-bottom: 200px;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 36px;
+    line-height: 1.25;
+    margin-bottom: 303px;
+  }
+}
+.products__card {
+  --indent: 168px;
+  --items: 1;
+  text-align: center;
+  @media screen and (min-width: 768px) {
+    --indent: 16px;
+    --items: 3;
+    flex-wrap: nowrap;
+  }
+  @media screen and (min-width: 1200px) {
+    --indent: 29px;
+  }
+}
+.products__item {
+  position: relative;
+  align-items: center;
+
+  border-radius: 24px;
+
+  width: 100%;
+  height: 420px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media screen and (min-width: 768px) {
+    height: 428px;
+    box-shadow: 0px 5.26027px 19.726px rgba(212, 20, 67, 0.1);
+    border-radius: 15.7808px;
+  }
+  @media screen and (min-width: 1200px) {
+    height: 536px;
+    box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+    border-radius: 24px;
+  }
+}
+.products__item-c1 {
+  background: #aec6a5;
+}
+.products__item-c2 {
+  background: #efd478;
+}
+.products__item-c3 {
+  background: #d6936d;
+}
+.products-wrapper {
+  // display: flex;
+  // flex-direction: column;
+  // align-items: center;
+  padding: 123px 40px 16px 40px;
+  @media screen and (min-width: 768px) {
+    padding: 108px 26px 12px 26px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding: 165px 64px 60px 64px;
+  }
+}
+.products__thumb {
+  top: 0;
+  left: 50%;
+  position: relative;
+  position: absolute;
+  width: 200px;
+  height: 200px;
+
+  border-radius: 150px;
+
+  transform: translateY(-50%) translateX(-50%);
+  @media screen and (min-width: 1200px) {
+    width: 302px;
+    height: 302px;
+  }
+}
+.products__thumb-color1 {
+  background: linear-gradient(
+      0deg,
+      rgba(156, 190, 143, 0.7),
+      rgba(156, 190, 143, 0.7)
+    ),
+    #d9d9d9;
+  box-shadow: 0px 8px 30px rgba(10, 136, 23, 0.25);
+}
+.products__thumb-color2 {
+  background: linear-gradient(
+      0deg,
+      rgba(248, 210, 78, 0.7),
+      rgba(248, 210, 78, 0.7)
+    ),
+    #d9d9d9;
+  box-shadow: 0px 5.40397px 20.2649px rgba(153, 114, 23, 0.25);
+}
+.products__thumb-color3 {
+  background: linear-gradient(
+      0deg,
+      rgba(213, 117, 63, 0.7),
+      rgba(213, 117, 63, 0.7)
+    ),
+    #d9d9d9;
+  box-shadow: 0px 5.41333px 20.3px rgba(0, 0, 0, 0.25);
+}
+.products__img {
+  position: absolute;
+
+  width: 100%;
+  height: 100%;
+  border-radius: 150px;
+
+  transform: translateY(-11px);
+
+  @media screen and (min-width: 768px) {
+    transform: translateY(-12px);
+  }
+  @media screen and (min-width: 1200px) {
+    transform: translateY(-16px);
+  }
+}
+.products__link {
+  position: absolute;
+
+  bottom: 16px;
+  left: 50%;
+
+  transform: translateX(-50%);
+
+  @media screen and (min-width: 768px) {
+    bottom: 12px;
+  }
+  @media screen and (min-width: 1200px) {
+    bottom: 60px;
+  }
+}
+.products__button {
+  background: transparent;
+  border: none;
+}
+.arrow {
+  fill: #131313;
+}
+.arrow:hover,
+.arrow:focus {
+  fill: #fcfcfc;
+}
+.products-wrapper__title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #131313;
+  margin-bottom: 40px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 22px;
+    line-height: 1.23;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 30px;
+  }
+}
+.products-wrapper__description {
+  font-size: 14px;
+  line-height: 1.76;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: #131313;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 16px;
+  }
+}
