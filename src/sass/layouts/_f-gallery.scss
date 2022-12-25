@@ -4,29 +4,120 @@
   padding-top: 0;
   padding-bottom: 0;
 
-  background: linear-gradient(
+  background: linear-gradient(($bgc-primary-color) 20%,
     ($bgc-primary-color) 20%,
+    transparent 0);
+
+ @media screen and (min-width: 768px) {
+
+  background: linear-gradient(
+    ($bgc-primary-color) 40%,
     ($bgc-primary-color) 20%,
     transparent 0
   );
+ }
+ @media screen and (min-width: 1200px) {
+  background: linear-gradient(($bgc-primary-color) 20%,
+  ($bgc-primary-color) 20%,
+  transparent 0);
+ }
 }
 
-//   .container {
-//     padding-left: 0;
-//     padding-right: 0;
-//     }
+.gallery__container{
+  position: relative;
+  
+}
 
-.gallery__img {
-  max-width: 100%;
-  height: auto;
-  margin: 0 auto;
+.gallery-animation-2, .gallery-animation-1 {
+
+  position: absolute;
+  left: 50%;
+  top: 0%;
+  transform: translateX(-50%);
+
+  width: 280px;
+  height: 130px;
 
   border-radius: 8px;
 
-  @media screen and (min-width: 768px) {
-    border-radius: 18px;
+ @media screen and (min-width: 768px) {
+  width: 704px;
+  height: 327px;
+  border-radius: 18px;  
   }
-  @media screen and (min-width: 1200px) {
-    border-radius: 24px;
+
+ @media screen and (min-width: 1200px) {
+  width: 1013px;
+  height: 422px;
+  border-radius: 24px;
+ }
+}
+.gallery-animation-3 {
+  width: 280px;
+  height: 130px;
+  border-radius: 8px;
+  margin: 0 auto;
+  z-index: 1111;
+
+  animation-name: appearance;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-delay: 1s;
+  animation-duration: 5s;
+  animation-direction: alternate;
+  transition: opacity 1s ease-in-out;
+
+ @media screen and (min-width: 768px) {
+  width: 704px;
+  height: 327px;
+  border-radius: 18px;
+  }
+
+ @media screen and (min-width: 1200px) {
+  width: 1013px;
+  height: 422px;
+  border-radius: 24px;
   }
 }
+.gallery-animation-2 {
+  animation-name: appearance;
+  animation-timing-function: ease-in-out;
+  animation-delay: 4s;
+  animation-iteration-count: infinite;
+  animation-duration: 5s;
+  animation-direction: alternate;
+  transition: opacity 1s ease-in-out;
+}
+
+.gallery-animation-1 {
+  animation-name: appearance;
+  animation-timing-function: ease-in-out;
+  animation-delay: 6s;
+  animation-iteration-count: infinite;
+  animation-duration: 5s;
+  animation-direction: alternate;
+  transition: opacity 1s ease-in-out;
+}
+
+
+// animation
+
+ @keyframes appearance {
+  0% {
+      opacity: 1;
+    }
+  
+    45% {
+      opacity: 1;
+    }
+  
+    55% {
+      opacity: 0;
+    }
+  
+    100% {
+      opacity: 0;
+    }
+  
+ }
+
