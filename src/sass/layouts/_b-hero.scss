@@ -1,0 +1,294 @@
+.hero {
+    background-color: $bgc-primary-color;
+    background-image: url("../images/hero/dots_mob@1x.png");
+    background-repeat: no-repeat;
+    background-position: center bottom 0;
+    background-size: 100%;
+ 
+
+    // retina mobil screen
+ @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url("../images/hero/dots_mob@2x.png");
+    }
+
+ @media screen and (min-width: 480px) {
+    background-size: 480px;
+    }
+
+    // Tablet screen
+ @media screen and (min-width: 768px) {
+    background-image: url("../images/hero/dots_tab@1x.png");
+    background-size: auto;
+    
+
+    // retina tablet screen
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url("../images/hero/dots_tab@2x.png");
+    background-size: 768px 68px;
+    }
+ }
+
+    // Desktop screen
+ @media screen and (min-width: 1200px) {
+    background-image: url("../images/hero/dots_desk@1x.png");
+
+    // retina desktop screen
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url("../images/hero/dots_desk@2x.png");
+    background-size: 1200px 383px;
+    }
+    }
+}
+
+.hero__container {
+    padding-top: 99px;
+    padding-bottom: 236px;
+
+    background-image: url("../images/hero/big-ice_mob@1x.png");
+    background-repeat: no-repeat;
+   
+    background-position: left calc(50% + 10px) bottom 0;
+
+    // retina mobil screen
+ @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url("../images/hero/big-ice_mob@2x.png");
+   background-size: 177px 217px;
+    }
+
+ @media screen and (min-width: 375px) {
+    background-position: left calc(50% - 8px) bottom 0;
+
+    }
+
+    // Tablet screen
+ @media screen and (min-width: 768px) {
+    padding-top: 80px;
+    padding-bottom: 24px;
+
+    background-image: url("../images/hero/big-ice_tab@1x.png"), url("../images/hero/more-ice-cream_tab@1x.png");
+    background-position: left 408px bottom 0, left 32px bottom 12px;
+    
+
+    // retina tablet screen
+ @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url("../images/hero/big-ice_tab@2x.png"), url("../images/hero/more-ice-cream_tab@2x.png");
+   background-size: 268px 329px, 152px 152px;
+   }
+    }
+
+    // Desktop screen
+ @media screen and (min-width: 1200px) {
+    padding-top: 118px;
+    padding-bottom: 105px;
+
+    background-image: url("../images/hero/big-ice_desk@1x.png"),
+        url("../images/hero/more-ice-cream_desk@1x.png");
+    background-position: right 92px bottom 0, left 16px bottom 65px;
+
+    // retina desktop screen
+ @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url("../images/hero/big-ice_desk@2x.png"),
+    url("../images/hero/more-ice-cream_desk@2x.png");
+    background-size: 456px 566px, 225px 225px;
+        }
+    } 
+}
+
+.hero__thumb {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hero__title {
+    width: 247px;
+    margin-bottom: 32px;
+    font-family: 'Seymour One';
+    font-size: 26px;
+    line-height: calc(33 / 26);
+    text-transform: uppercase;
+
+    color: $text-and-modal-white;
+
+ @media screen and (min-width: 768px) {
+    margin-bottom: 24px;
+    }
+
+ @media screen and (min-width:1200px) {
+    width: 367px;
+    margin-bottom: 28px;
+    font-size: 38px;
+    line-height: calc(48 / 38);
+
+    }
+}
+
+.hero__title--big-sitze {
+    font-size: 34px;
+    line-height: 96.5%;
+
+ @media screen and (min-width:1200px) {
+    font-size: 38px;
+    line-height: calc(48 / 38);
+    }
+
+}
+
+.btn-link {
+    display: flex;
+    gap: 12px;
+
+ @media screen and (min-width: 768px) {
+    margin-bottom: 39px;
+    }
+
+ @media screen and (min-width: 1200px) {
+    margin-bottom: 109px;
+    }
+}
+
+.btn-link__products {
+    display: block;
+    padding: 11px 26px;
+
+    font-weight: 600;
+    font-size: 12px;
+    line-height: calc(15 / 12);
+    border: 2px solid $brand-primary-color;
+    border-radius: 8px;
+
+    color: $classic-black;
+
+    transition: border-color $action-total-time $action-cubic-time, color $action-total-time $action-cubic-time;
+
+ @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: calc(18 / 14);
+    color: $text-primary-black;
+    }
+}
+
+.btn-link__products:hover,
+.btn-link__products:focus {
+    border-color: $btn-hover-green;
+}
+
+.btn-link__products:focus {
+    color: $text-and-modal-white;
+}
+
+.btn-link__about {
+    display: block;
+    padding: 11px 0;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
+
+    text-decoration-line: underline;
+
+    color: $brand-primary-color;
+    transition: color $action-total-time $action-cubic-time;
+
+ @media screen and (min-width: 1200px) {
+    padding: 11px 22px;
+    font-size: 14px;
+    line-height: calc(18 / 14);
+    }
+}
+
+.btn-link__about:hover {
+    color: $btn-hover-green;
+}
+
+.btn-link__about:focus {
+    color: $text-and-modal-white;
+}
+
+
+.hero-group {
+    display: none;
+
+ @media screen and (min-width: 768px) {
+    display: block;
+    padding-left: 184px;
+    }
+
+ @media screen and (min-width: 1200px) {
+    padding-left: 241px;
+    }
+}
+
+.hero-group__text {
+    width: 150px;
+    height: 85px;
+    margin-bottom: 12px;
+    font-size: 12px;
+    line-height: calc(17 / 12);
+
+    color: $text-and-modal-white;
+
+@media screen and (min-width: 1200px) {
+    width: 220px;
+    font-size: 14px;
+    line-height: calc(20 / 14);
+    }
+}
+
+.hero-group__svg {
+    display: block;
+    fill: $text-and-modal-white;
+}
+
+.places {
+    display: none;
+
+ @media screen and (min-width: 768px) {
+    display: block;
+    padding-top: 14px;
+    }
+}
+
+.places__item:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.places__amount {
+    margin-bottom: 4px;
+    font-weight: 900;
+    font-size: 28px;
+    line-height: calc(34 / 28);
+    text-align: right;
+    text-transform: uppercase;
+
+    color: $text-primary-black;
+
+ @media screen and (min-width: 1200px) {
+    font-size: 46px;
+    line-height: calc(56 / 46);
+    }
+}
+
+.places__name {
+    font-size: 8px;
+    line-height: calc(10 / 8);
+    text-align: right;
+
+    color: $text-and-modal-white;
+
+ @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: calc(17 / 14);
+
+    }
+}
