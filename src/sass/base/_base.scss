@@ -5,34 +5,35 @@ body {
   color: $classic-black;
 
   background-color: $text-and-modal-white;
-  // background-image: url(../images/background_mobile.jpg);
+  background-image: url(../images/background_mobile.jpg);
   background-position: center;
-  background-size: contain;
+  background-size: inherit;
   background-repeat: repeat;
+  background-attachment: fixed;
 
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    // background-image: url(../images/background_mobile@2x.jpg);
+    background-image: url(../images/background_mobile@2x.jpg);
   }
 
   @media screen and (min-width: 768px) {
-    // background-image: url(../images/background_tablet.jpg);
+    background-image: url(../images/background_tablet.jpg);
 
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      // background-image: url(../images/background_tablet@2x.jpg);
+      background-image: url(../images/background_tablet@2x.jpg);
     }
   }
 
   @media screen and (min-width: 1200px) {
-    // background-image: url(../images/background_desktop.jpg);
+    background-image: url(../images/background_desktop.jpg);
 
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      // background-image: url(../images/background_desktop@2x.jpg);
+      background-image: url(../images/background_desktop@2x.jpg);
     }
   }
 }
@@ -58,6 +59,7 @@ ul {
 a {
   text-decoration: none;
   color: inherit;
+  cursor: $pointer;
 }
 /* Свойства для корректного отображения картинок */
 img {
@@ -88,4 +90,9 @@ address {
     width: 1200px;
     padding: 0 16px;
   }
+}
+
+/* For smooth page scrolling */
+html {
+  scroll-behavior: smooth;
 }

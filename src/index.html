@@ -4,6 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ice cream</title>
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      href="./images/hero/big-ice_mob@1x.png"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -14,19 +19,23 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="./sass/index.scss" />
     <script type="module" src="./index.js"></script>
   </head>
   <body>
     <!-- ❗️❗️❗️ Add partials like so for every page -->
     <include src="./partials/a-header.html"></include>
-    <include src="./partials/b-hero.html"></include>
-    <include src="./partials/c-products.html"></include>
-    <include src="./partials/d-about.html"></include>
-    <include src="./partials/e-advantages.html"></include>
-    <include src="./partials/f-gallery.html"></include>
-    <include src="./partials/g-reviews.html"></include>
-    <include src="./partials/h-contacts.html"></include>
+    <main>
+      <include src="./partials/b-hero.html"></include>
+      <include src="./partials/c-products.html"></include>
+      <include src="./partials/d-about.html"></include>
+      <include src="./partials/e-advantages.html"></include>
+      <include src="./partials/f-gallery.html"></include>
+      <include src="./partials/g-reviews.html"></include>
+      <include src="./partials/h-contacts.html"></include>
+    </main>
     <include src="./partials/i-footer.html"></include>
     <include src="./partials/modals/modal-product.html"></include>
     <include src="./partials/modals/modal-ingredients.html"></include>
@@ -34,5 +43,6 @@
     <include src="./partials/modals/modal-franchise.html"></include>
     <include src="./partials/modals/modal-location.html"></include>
     <include src="./partials/modals/example-modal.html"></include>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
   </body>
 </html>
