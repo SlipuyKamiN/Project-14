@@ -7,4 +7,6 @@ pagination: {
     clickable: true,
   },
   slidesPerView: 1,
+  spaceBetween: 70,
+  speed: 600,
 });
