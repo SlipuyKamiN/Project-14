@@ -1,23 +1,19 @@
 <!-- Элементы для вызова модальных окон, могут быть любые -->
 
-<a href="#" class="btn js-open-modal" data-modal="1">Открыть окно 1</a>
-
-<!-- Несколько модальных окон -->
-
-<div class="modal" data-modal="1">
+<div class="modal-ingr" data-modal="2">
   <!--   Svg иконка для закрытия окна  -->
   <svg
-    class="modal__cross js-modal-close"
+    class="modal-ingr__cross js-modal-close"
     width="20"
     height="20"
     viewBox="0 0 24 24"
   >
     <use href="./images/icons.svg#icon-close-smaller"></use>
   </svg>
-  <p class="modal__title">Chocolate icecream</p>
-  <div class="modal__thumb">
+  <p class="modal-ingr__title">Chocolate icecream</p>
+  <div class="modal-ingr__thumb">
     <img
-      class="modal__img"
+      class="modal-ingr__img"
       srcset="
         ./images/modal/ellipse_67@1x.jpg 1x,
         ./images/modal/ellipse_67@2x.jpg 2x
@@ -27,66 +23,68 @@
       width="132"
     />
   </div>
-  <ul class="modal__list">
-    <li class="modal__item">
-      <div class="modal__rectangle">
-        <div class="modal__box"><p class="modal__value">320</p></div>
-        <p class="modal__description">kcal</p>
+  <ul class="modal-ingr__list">
+    <li class="modal-ingr__item">
+      <div class="modal-ingr__rectangle">
+        <div class="modal-ingr__box"><p class="modal-ingr__value">320</p></div>
+        <p class="modal-ingr__description">kcal</p>
       </div>
     </li>
-    <li class="modal__item">
-      <div class="modal__rectangle">
-        <div class="modal__box"><p class="modal__value">4g</p></div>
-        <p class="modal__description">Protein</p>
+    <li class="modal-ingr__item">
+      <div class="modal-ingr__rectangle">
+        <div class="modal-ingr__box"><p class="modal-ingr__value">4g</p></div>
+        <p class="modal-ingr__description">Protein</p>
       </div>
     </li>
-    <li class="modal__item">
-      <div class="modal__rectangle">
-        <div class="modal__box"><p class="modal__value">8,2g</p></div>
-        <p class="modal__description">Fats</p>
+    <li class="modal-ingr__item">
+      <div class="modal-ingr__rectangle">
+        <div class="modal-ingr__box"><p class="modal-ingr__value">8,2g</p></div>
+        <p class="modal-ingr__description">Fats</p>
       </div>
     </li>
-    <li class="modal__item">
-      <div class="modal__rectangle">
-        <div class="modal__box"><p class="modal__value">40,4g</p></div>
-        <p class="modal__description">Carb</p>
+    <li class="modal-ingr__item">
+      <div class="modal-ingr__rectangle">
+        <div class="modal-ingr__box">
+          <p class="modal-ingr__value">40,4g</p>
+        </div>
+        <p class="modal-ingr__description">Carb</p>
       </div>
     </li>
   </ul>
-  <p class="modal__ingredients-title">Ingredients</p>
-  <ul class="modal__ingredients-list">
-    <li class="modal__ingredients-item">
-      <span class="modal__ingredients">Milk</span>100ml
+  <p class="modal-ingr__ingredients-title">Ingredients</p>
+  <ul class="modal-ingr__ingredients-list">
+    <li class="modal-ingr__ingredients-item">
+      <span class="modal-ingr__ingredients">Milk</span>100ml
     </li>
-    <li class="modal__ingredients-item">
-      <span class="modal__ingredients">Belgian chocolate</span>20g
+    <li class="modal-ingr__ingredients-item">
+      <span class="modal-ingr__ingredients">Belgian chocolate</span>20g
     </li>
-    <li class="modal__ingredients-item">
-      <span class="modal__ingredients">Cream</span>150 ml
+    <li class="modal-ingr__ingredients-item">
+      <span class="modal-ingr__ingredients">Cream</span>150 ml
     </li>
-    <li class="modal__ingredients-item">
-      <span class="modal__ingredients">Cocoa powder</span> 30g
+    <li class="modal-ingr__ingredients-item">
+      <span class="modal-ingr__ingredients">Cocoa powder</span> 30g
     </li>
-    <li class="modal__ingredients-item">
-      <span class="modal__ingredients">Sugar</span>40g
+    <li class="modal-ingr__ingredients-item">
+      <span class="modal-ingr__ingredients">Sugar</span>40g
     </li>
-    <li class="modal__ingredients-item">
-      <span class="modal__ingredients">Vanilla sugar</span>10g
+    <li class="modal-ingr__ingredients-item">
+      <span class="modal-ingr__ingredients">Vanilla sugar</span>10g
     </li>
   </ul>
-  <form class="modal__form">
-    <label class="modal__label"
+  <form class="modal-ingr__form">
+    <label class="modal-ingr__label"
       ><input
-        class="modal__input"
+        class="modal-ingr__input"
         type="text"
         placeholder="Name"
         required
         pattern="^[a-zA-Z]+\s[a-zA-Z]+$"
         title="Username must be two words separated by space."
     /></label>
-    <label class="modal__label"
+    <label class="modal-ingr__label"
       ><input
-        class="modal__input"
+        class="modal-ingr__input"
         type="tel"
         placeholder="Phone"
         required
@@ -95,16 +93,13 @@
         maxlength="13"
         title="Phone number must be thirteen symbols."
     /></label>
-    <label class="modal__label-textarea">
+    <label class="modal-ingr__label-textarea">
       <textarea
-        class="modal__textarea"
+        class="modal-ingr__textarea"
         rows="3"
         placeholder="Comment"
       ></textarea>
     </label>
-    <button class="modal__btn" type="submit">Submit</button>
+    <button class="modal-ingr__btn" type="submit">Submit</button>
   </form>
 </div>
-
-<!-- Подложка под модальным окном -->
-<div class="overlay js-overlay-modal"></div>
