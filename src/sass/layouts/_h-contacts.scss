@@ -252,6 +252,11 @@
     background-color: $btn-hover-green;
     color: $classic-white;
   }
+
+  &:hover .contact__button-arrow,
+  &:focus .contact__button-arrow {
+    fill: $classic-white;
+  }
 }
 
 .contact__button--franchise {
@@ -269,6 +274,9 @@
   &:focus {
     border-color: $btn-hover-green;
     color: $classic-white;
+  }
+  &:focus .contact__button-arrow {
+    fill: $classic-white;
   }
 }
 .contact__button-arrow {
