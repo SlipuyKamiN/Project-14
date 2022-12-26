@@ -17,7 +17,7 @@
 
 /* Стили для модальных окон */
 
-.modal-ingr {
+.modal.ingredients {
   /* Скрываем окна  */
   opacity: 0;
   visibility: hidden;
@@ -55,7 +55,7 @@
 
 /* Стили для активных классов подложки и окна */
 
-.modal-ingr.active,
+.modal.ingredients.active,
 .overlay.active {
   opacity: 1;
   visibility: visible;
