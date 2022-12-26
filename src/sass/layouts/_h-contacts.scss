@@ -237,7 +237,7 @@
   justify-content: center;
   align-items: center;
   gap: 4px;
-  cursor: pointer;
+  cursor: $pointer;
 }
 .contact__button--location {
   background-color: $brand-primary-color;

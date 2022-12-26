@@ -53,7 +53,7 @@
   top: 12px;
   right: 12px;
   fill: #131313;
-  cursor: pointer;
+  cursor: $pointer;
 }
 
 .modal-label {
@@ -250,6 +250,7 @@
   background-color: #f8d24e;
   border: none;
   border-radius: 10px;
+  cursor: $pointer;
 
   font-family: 'Montserrat';
   font-weight: 600;
