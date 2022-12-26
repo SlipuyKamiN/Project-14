@@ -1,0 +1,56 @@
+<!-- Franchise -->
+<div class="modal franchise" data-modal="5">
+  <svg
+    class="modal__cross js-modal-close"
+    width="20"
+    height="20"
+    viewBox="0 0 24 24"
+  >
+    <use href="./images/icons.svg#icon-close-smaller"></use>
+  </svg>
+  <strong class="modal-label">
+    Thank you for your interest in owning an Ice Cream shop
+  </strong>
+  <p class="modal__text">
+    Due to the overwhelming volume of franchise requests we are not accepting
+    new franchisee applications at this time. Once the application process
+    resumes, we will contact you for further information. Please fill out the
+    contact information below and we will reach out for additional information.
+    We appreciate your patience.
+  </p>
+  <form class="buy-form" name="buy_form">
+    <input
+      class="modal__input"
+      type="text"
+      name="username"
+      placeholder="Name"
+      required
+      pattern="^[a-zA-Z]+\s[a-zA-Z]+$"
+    />
+    <input
+      class="modal__input"
+      type="text"
+      name="user_phone"
+      placeholder="Phone"
+      pattern="\+?[0-9\s\-\(\)]+"
+      minlength="13"
+      maxlength="13"
+    />
+    <input
+      class="modal__input"
+      type="text"
+      name="user_mail"
+      placeholder="Email"
+      pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+    />
+    <textarea
+      class="modal__input"
+      name="user_message"
+      id="user_message"
+      cols="30"
+      rows="5"
+      placeholder="Comment"
+    ></textarea>
+    <button class="btn" type="submit">Submit</button>
+  </form>
+</div>

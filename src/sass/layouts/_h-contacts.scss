@@ -3,8 +3,23 @@
   --contact-items: 3;
 }
 .contact {
-  background-color: $bgc-primary-color;
-  //   padding-bottom: 60px;
+  background: linear-gradient(
+    rgba(0, 0, 0, 0) 353px,
+    ($bgc-primary-color) 353px
+  );
+
+  @media screen and (min-width: 768px) {
+    background: linear-gradient(
+      rgba(0, 0, 0, 0) 299px,
+      ($bgc-primary-color) 299px
+    );
+  }
+  @media screen and (min-width: 1200px) {
+    background: linear-gradient(
+      rgba(0, 0, 0, 0) 128px,
+      ($bgc-primary-color) 128px
+    );
+  }
 }
 .contact__card-set {
   display: flex;
@@ -114,7 +129,6 @@
   letter-spacing: 0.04em;
 
   color: $card-brown-color;
-  margin-bottom: 24px;
 
   &:hover,
   &:focus {
@@ -126,7 +140,6 @@
   }
   @media screen and (min-width: 768px) {
     font-size: 14px;
-    margin-bottom: 32px;
   }
   @media screen and (min-width: 1200px) {
     font-size: 16px;
@@ -136,9 +149,11 @@
 .contact__gray-line {
   width: 100%;
   border-top: 1px solid #e1e1e1;
+  margin-top: 24px;
   margin-bottom: 24px;
   @media screen and (min-width: 768px) {
     margin-bottom: 32px;
+    margin-top: 32px;
   }
 }
 .contact__work-time {
@@ -215,8 +230,9 @@
 }
 .contact__button {
   min-width: 196px;
+  min-height: 42px;
   border-radius: 10px;
-  padding: 12px 40px;
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -225,7 +241,7 @@
 }
 .contact__button--location {
   background-color: $brand-primary-color;
-  border: none;
+  border: $brand-primary-color;
   transition-property: background-color, color;
   transition-duration: $action-total-time;
   transition-timing-function: $action-cubic-time;
@@ -264,5 +280,5 @@
   font-style: normal;
   font-weight: 600;
   font-size: 14px;
-  line-height: calc(18 / 14);
+  line-height: 1.29;
 }
