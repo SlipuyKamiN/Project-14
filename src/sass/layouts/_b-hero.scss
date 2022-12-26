@@ -220,7 +220,8 @@
    fill: $btn-hover-green;
 }
 
-.hero-group__arrow:hover + .hero-group__description {
+.hero-group__arrow:hover + .hero-group__description,
+.hero-group__arrow:focus+.hero-group__description {
    opacity: 1;
 }
 
