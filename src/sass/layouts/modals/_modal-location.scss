@@ -1,19 +1,19 @@
-/* Стили для подложки */
+// /* Стили для подложки */
 
-.overlay {
-  /* Скрываем подложку  */
-  opacity: 0;
-  visibility: hidden;
+// .overlay {
+//   /* Скрываем подложку  */
+//   opacity: 0;
+//   visibility: hidden;
 
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  z-index: 20;
-  transition: 0.3s all;
-}
+//   position: fixed;
+//   top: 0;
+//   left: 0;
+//   width: 100%;
+//   height: 100%;
+//   background-color: rgba(0, 0, 0, 0.5);
+//   z-index: 20;
+//   transition: 0.3s all;
+// }
 
 /* Стили для модальных окон */
 
