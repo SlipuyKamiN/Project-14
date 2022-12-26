@@ -1,0 +1,26 @@
+// Scroll to top button
+
+.up__btn {
+  display: none;
+  position: fixed;
+  align-items: center;
+  justify-content: center;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  border-radius: 50%;
+  outline: none;
+  background-color: $brand-primary-color;
+  cursor: $pointer;
+  padding: 15px;
+}
+
+.up__btn:hover {
+  background-color: $card-yellow-color;
+}
+.up__img {
+  transform: rotate(270deg);
+  transform-origin: center center;
+}

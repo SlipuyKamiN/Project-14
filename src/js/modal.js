@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', function () {
             люди могут сделать по-разному. Кто-то сделает ссылку, кто-то кнопку.
             Нужно подстраховаться. */
       e.preventDefault();
-
+      document.body.classList.add('modal-open');
       /* При каждом клике на кнопку мы будем забирать содержимое атрибута data-modal
             и будем искать модальное окно с таким же атрибутом. */
       var modalId = this.getAttribute('data-modal'),
@@ -58,7 +58,7 @@ document.addEventListener('DOMContentLoaded', function () {
   closeButtons.forEach(function (item) {
     item.addEventListener('click', function (e) {
       var parentModal = this.closest('.modal');
-
+      document.body.classList.remove('modal-open');
       parentModal.classList.remove('active');
       overlay.classList.remove('active');
     });
@@ -71,14 +71,30 @@ document.addEventListener('DOMContentLoaded', function () {
 
       if (key == 27) {
         document.querySelector('.modal.active').classList.remove('active');
-        document.querySelector('.overlay').classList.remove('active');
+        document.querySelector('.js-backdrop-modal').classList.remove('active');
+        document.body.classList.remove('modal-open');
       }
     },
     false
   );
 
-  overlay.addEventListener('click', function () {
+  overlay.addEventListener('click', function (e) {
+    if (e.target !== e.currentTarget) {
+      return;
+    }
     document.querySelector('.modal.active').classList.remove('active');
     this.classList.remove('active');
+    document.body.classList.remove('modal-open');
   });
 }); // end ready
+
+// 1. На кнопку відкриття модалки доати клас js-open-modal, атрибут data-modal="1" (1 це номер модалки, значення довільне)
+
+// 2. В кінці боді створити один спільний бекдроп  з класом js-overlay-modal, в який вкласти усі модалки
+
+// 3. На кнопки закриття модалок повішати клас js-modal-close
+
+// 4. На саму модалку задати клас modal,
+// 	атрибут data-modal="1" (де 1 це довільне значення, але має співпадати з таким самим атрибутом на кнопці, яка відкривала цю модалку)
+
+// При відкритті модалки на неї і на бекдроп буде додаватися клас active, тому треба відповідні стилі додати на модалку і бекдроп. Є клас active, вони видимі, немає -- невидимі
