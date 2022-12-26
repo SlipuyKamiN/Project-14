@@ -203,11 +203,16 @@
    line-height: calc(20 / 14);
    }
 }
-
+.hero-group__arrow {
+   padding-left: 0;
+   background-color: inherit;
+   border: none;
+   cursor: $pointer;
+   transition: color $action-total-time $action-cubic-time;
+}
 .hero-group__svg {
    display: block;
    fill: $text-and-modal-white;
-   cursor: $pointer;
    transition: fill $action-total-time $action-cubic-time;
 }
 
@@ -215,7 +220,7 @@
    fill: $btn-hover-green;
 }
 
-.hero-group__svg:hover + .hero-group__description {
+.hero-group__arrow:hover + .hero-group__description {
    opacity: 1;
 }
 
@@ -224,7 +229,6 @@
    left:216px;
    bottom: 48px;
 
- 
    width: 235px;
    font-size: 12px;
    line-height: calc(17 / 12);
