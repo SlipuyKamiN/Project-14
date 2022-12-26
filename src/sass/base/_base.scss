@@ -3,6 +3,7 @@ body {
   font-weight: 400;
   letter-spacing: 0.04em;
   color: $classic-black;
+  cursor: $pointer-smaller;
 
   background-color: $text-and-modal-white;
   background-image: url(../images/background_mobile.jpg);
@@ -73,7 +74,7 @@ address {
 }
 
 .container {
-  outline: 1px solid red;
+  // outline: 1px solid red;
   margin: 0 auto;
   padding: 0 20px;
 
