@@ -1,0 +1,108 @@
+// /* Стили для подложки */
+
+/* Стили для модальных окон */
+
+.modal {
+  /* Скрываем окна  */
+  opacity: 0;
+  visibility: hidden;
+
+  /*  Установаем ширину окна  */
+  // width: 100%;
+  width: calc(100% - 40px);
+  max-width: 440px;
+
+  /*  Центрируем и задаем z-index */
+  position: fixed;
+  // position: absolute;
+  // top: 50%;
+  top: 10px;
+  left: 50%;
+  // transform: translate(-50%, -50%);
+  transform: translateX(-50%);
+  // overflow: scroll;
+  z-index: 30; /* Должен быть выше чем у подложки*/
+
+  /*  Побочные стили   */
+  box-shadow: 0 3px 10px -0.5px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  padding: 28px;
+  border: 2px solid #f8d24e;
+  border-radius: 10px;
+  background-color: #fff;
+  transition: 0.3s all;
+
+  @media screen and (min-width: 768px) {
+    max-width: 568px;
+    padding: 32px 60px;
+  }
+}
+
+/* Стили для активных классов подложки и окна */
+
+.modal.active,
+.overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Стили для кнопки закрытия */
+
+.modal__cross {
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  fill: #444;
+  cursor: pointer;
+}
+
+.modal-location__title {
+  font-family: 'Seymour One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #131313;
+
+  @media screen and (min-width: 768px) {
+    font-size: 20px;
+    line-height: 1.4;
+    margin-bottom: 32px;
+  }
+}
+.modal-location__img {
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 24px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 32px;
+  }
+}
+.modal-location__btn {
+  display: inline-block;
+  width: 134px;
+  background: #f8d24e;
+  border-radius: 10px;
+  border: transparent;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.25;
+  color: #131313;
+
+  padding: 12px;
+  text-decoration: none;
+
+  @media screen and (min-width: 768px) {
+    width: 145px;
+    font-size: 14px;
+    line-height: 1.21;
+  }
+}
