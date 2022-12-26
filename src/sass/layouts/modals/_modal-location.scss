@@ -1,20 +1,5 @@
 // /* Стили для подложки */
 
-// .overlay {
-//   /* Скрываем подложку  */
-//   opacity: 0;
-//   visibility: hidden;
-
-//   position: fixed;
-//   top: 0;
-//   left: 0;
-//   width: 100%;
-//   height: 100%;
-//   background-color: rgba(0, 0, 0, 0.5);
-//   z-index: 20;
-//   transition: 0.3s all;
-// }
-
 /* Стили для модальных окон */
 
 .modal {
@@ -41,7 +26,7 @@
   /*  Побочные стили   */
   box-shadow: 0 3px 10px -0.5px rgba(0, 0, 0, 0.2);
   text-align: center;
-  padding: 28px 20px;
+  padding: 28px;
   border: 2px solid #f8d24e;
   border-radius: 10px;
   background-color: #fff;
@@ -49,7 +34,7 @@
 
   @media screen and (min-width: 768px) {
     max-width: 568px;
-    padding: 32px 40px;
+    padding: 32px 60px;
   }
 }
 
@@ -73,15 +58,6 @@
   cursor: pointer;
 }
 
-.btn {
-  padding: 20px;
-  display: inline-block;
-  text-decoration: none;
-  background-color: #414b52;
-  margin: 10px;
-  color: #fff;
-  border-radius: 3px;
-}
 .modal-location__title {
   font-family: 'Seymour One';
   font-style: normal;
@@ -109,8 +85,8 @@
   }
 }
 .modal-location__btn {
+  display: inline-block;
   width: 134px;
-  height: 42px;
   background: #f8d24e;
   border-radius: 10px;
   border: transparent;
@@ -120,6 +96,9 @@
   font-size: 12px;
   line-height: 1.25;
   color: #131313;
+
+  padding: 12px;
+  text-decoration: none;
 
   @media screen and (min-width: 768px) {
     width: 145px;
