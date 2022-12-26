@@ -253,7 +253,6 @@
     color: $classic-white;
   }
 
-  &:hover .contact__button-arrow,
   &:focus .contact__button-arrow {
     fill: $classic-white;
   }
@@ -280,6 +279,9 @@
   }
 }
 .contact__button-arrow {
+  transition-property: fill;
+  transition-duration: $action-total-time;
+  transition-timing-function: $action-cubic-time;
   fill: $text-primary-black;
 }
 
