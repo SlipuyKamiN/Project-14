@@ -188,6 +188,9 @@
 .menu__close-icon {
   fill: currentColor;
 }
+.menu__close-icon:hover {
+  fill: $brand-primary-color;
+}
 .menu__list {
   padding-top: 51px;
 
