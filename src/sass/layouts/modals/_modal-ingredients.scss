@@ -177,12 +177,9 @@
 }
 .modal-ingr__input {
   padding: 11px 16px;
-  // width: 368px;
   width: calc(100vw - 80px);
-  // max-width: 368px;
-  // margin-bottom: 16px;
+  max-width: 240px;
   height: 42px;
-  // outline: none;
   background: rgba(248, 210, 78, 0.1);
   border: 1px solid #84a178;
   border-radius: 10px;
@@ -192,12 +189,10 @@
   }
 }
 .modal-ingr__input:not(:placeholder-shown):required:valid {
-  // border-color: green;
   outline-color: green;
 }
 
 .modal-ingr__input:not(:placeholder-shown):required:invalid {
-  // border-color: red;
   outline-color: red;
 }
 .modal-ingr__label-textarea {
@@ -210,8 +205,7 @@
 .modal-ingr__textarea {
   padding: 11px 16px;
   width: calc(100vw - 80px);
-  // width: 368px;
-  // margin-bottom: 32px;
+  max-width: 240px;
   height: 84px;
   background: rgba(248, 210, 78, 0.1);
   border: 1px solid #84a178;

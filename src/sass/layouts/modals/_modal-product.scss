@@ -213,6 +213,14 @@
   }
 }
 
+.modal__input:not(:placeholder-shown):required:valid {
+  outline-color: green;
+}
+
+.modal__input:not(:placeholder-shown):required:invalid {
+  outline-color: red;
+}
+
 .btn {
   display: inline-block;
   text-decoration: none;
