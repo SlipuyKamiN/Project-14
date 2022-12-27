@@ -17,6 +17,9 @@
   fill: #444;
   cursor: $pointer;
 }
+.modal-ingr__cross:hover {
+  fill: $brand-primary-color;
+}
 
 .modal-ingr__title {
   font-family: 'Seymour One';
