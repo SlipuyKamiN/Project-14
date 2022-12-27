@@ -1,66 +1,13 @@
-/* Стили для подложки */
-
-// .overlay {
-//   /* Скрываем подложку  */
-//   opacity: 0;
-//   visibility: hidden;
-
-//   position: fixed;
-//   top: 0;
-//   left: 0;
-//   width: 100%;
-//   height: 100%;
-//   background-color: rgba(0, 0, 0, 0.5);
-//   z-index: 20;
-//   transition: 0.3s all;
-// }
-
-/* Стили для модальных окон */
-
 .modal.ingredients {
-  /* Скрываем окна  */
-  opacity: 0;
-  visibility: hidden;
-
-  /*  Установаем ширину окна  */
-  // width: 100%;
-  width: calc(100% - 40px);
-  max-width: 440px;
-
-  /*  Центрируем и задаем z-index */
-  // position: fixed;
-  position: absolute;
-  // top: 50%;
-  top: 10px;
-  left: 50%;
-  // transform: translate(-50%, -50%);
-  transform: translateX(-50%);
-  // overflow: scroll;
-  z-index: 30; /* Должен быть выше чем у подложки*/
-
   /*  Побочные стили   */
-  box-shadow: 0 3px 10px -0.5px rgba(0, 0, 0, 0.2);
-  text-align: center;
+  max-width: 440px;
   padding: 28px 20px;
-  border: 2px solid #f8d24e;
-  border-radius: 10px;
-  background-color: #fff;
-  transition: 0.3s all;
 
   @media screen and (min-width: 768px) {
     max-width: 568px;
     padding: 32px 40px;
   }
 }
-
-/* Стили для активных классов подложки и окна */
-
-.modal.ingredients.active,
-.overlay.active {
-  opacity: 1;
-  visibility: visible;
-}
-
 /* Стили для кнопки закрытия */
 
 .modal-ingr__cross {

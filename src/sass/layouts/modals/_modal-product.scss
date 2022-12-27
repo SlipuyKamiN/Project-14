@@ -1,72 +1,12 @@
-.overlay {
-  opacity: 0;
-  visibility: hidden;
-
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  z-index: 20;
-  transition: 250ms all;
-}
-
-.modal {
-  opacity: 0;
-  visibility: hidden;
-
+.modal.product {
   width: 280px;
-  position: absolute;
-  top: 20px;
   left: 50%;
   transform: translateX(-50%);
-  z-index: 30;
-
-  box-shadow: 0 3px 10px -0.5px rgba(0, 0, 0, 0.2);
-  text-align: center;
-  padding: 28px 28px;
-  background-color: #fcfcfc;
-  border: 2px solid #f8d24e;
-  border-radius: 10px;
-  transition: 250ms all;
 
   @media screen and (min-width: 768px) {
     width: 568px;
     padding: 32px 54px;
-    top: 50%;
-    transform: translate(-50%, -50%);
   }
-}
-
-.product {
-  width: 280px;
-  position: absolute;
-  top: 20px;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 30;
-
-  box-shadow: 0 3px 10px -0.5px rgba(0, 0, 0, 0.2);
-  text-align: center;
-  padding: 28px 28px;
-  background-color: #fcfcfc;
-  border: 2px solid #f8d24e;
-  border-radius: 10px;
-  transition: 250ms all;
-
-  @media screen and (min-width: 768px) {
-    width: 568px;
-    padding: 32px 54px;
-    top: 50%;
-    transform: translate(-50%, -50%);
-  }
-}
-
-.modal.active,
-.overlay.active {
-  opacity: 1;
-  visibility: visible;
 }
 
 .modal__cross {
@@ -76,7 +16,7 @@
   top: 12px;
   right: 12px;
   fill: #131313;
-  cursor: pointer;
+  cursor: $pointer;
 }
 
 .modal-label {
@@ -134,6 +74,7 @@
 .modal__item {
   filter: drop-shadow(0px 5.26027px 19.726px rgba(212, 20, 67, 0.1));
   border-radius: 50% 50% 15px 15px;
+  cursor: $pointer;
 }
 
 .modal__icecream {
@@ -168,6 +109,7 @@
   width: 100%;
   height: 100%;
   z-index: 35;
+  cursor: $pointer;
 
   &:checked + .modal__icecream {
     transform: scale(102%);
