@@ -1,10 +1,10 @@
 .modal.product {
   width: 280px;
-  // transform: translateX(-50%);
-
+  overflow-y: auto;
   @media screen and (min-width: 768px) {
     width: 568px;
     padding: 32px 54px;
+    overflow: auto;
   }
 }
 
