@@ -99,3 +99,8 @@ line-height: calc(30/16);
       margin: 0 9px;
     }
 
+    .swiper-pagination-clickable .swiper-pagination-bullet{
+      cursor: $pointer;
+    }
+      
+
