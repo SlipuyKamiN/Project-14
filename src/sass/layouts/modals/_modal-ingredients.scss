@@ -2,8 +2,9 @@
   /*  Побочные стили   */
   max-width: 440px;
   padding: 28px 20px;
-
+  top: 10vh;
   @media screen and (min-width: 768px) {
+    top: 70vh;
     max-width: 568px;
     padding: 32px 40px;
   }

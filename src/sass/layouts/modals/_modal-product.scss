@@ -1,7 +1,6 @@
 .modal.product {
   width: 280px;
-  left: 50%;
-  transform: translateX(-50%);
+  // transform: translateX(-50%);
 
   @media screen and (min-width: 768px) {
     width: 568px;
