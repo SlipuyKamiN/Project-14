@@ -18,10 +18,11 @@
   visibility: hidden;
 
   width: 280px;
+  max-height: 100%;
   position: absolute;
-  top: 10vh;
+  top: 50%;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translate(-50%, -50%) scale(0);
   z-index: 30;
 
   box-shadow: 0 3px 10px -0.5px rgba(0, 0, 0, 0.2);
@@ -35,7 +36,11 @@
     width: 568px;
     padding: 32px 54px;
     top: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%) scale(0);
+  }
+
+  &.active {
+    transform: translate(-50%, -50%) scale(100%);
   }
 }
 
