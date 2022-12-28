@@ -10,92 +10,94 @@
     <use href="./images/icons.svg#icon-close-smaller"></use>
   </svg>
   <strong class="modal-label">Buy now</strong>
-  <form class="modal__list">
-    <div class="modal__group">
-      <input
-        class="modal__checkbox"
-        type="checkbox"
-        name="ice-cream"
-        id="ice-cream"
-      />
-      <label class="modal__item modal__icecream" for="ice-cream">
-        Ice cream
-      </label>
-      <div class="modal__thumb ice-cream">
-        <img
-          class="modal__img"
-          srcset="./images/modals/img1.jpg 1x, ./images/modals/img1@2x.jpg 2x"
-          src="./images/modals/img1.jpg"
-          alt="Ice cream"
+  <form>
+    <div class="modal__list">
+      <div class="modal__group">
+        <input
+          class="modal__checkbox"
+          type="checkbox"
+          name="ice-cream"
+          id="ice-cream"
         />
+        <label class="modal__item modal__icecream" for="ice-cream">
+          Ice cream
+        </label>
+        <div class="modal__thumb ice-cream">
+          <img
+            class="modal__img"
+            srcset="./images/modals/img1.jpg 1x, ./images/modals/img1@2x.jpg 2x"
+            src="./images/modals/img1.jpg"
+            alt="Ice cream"
+          />
+        </div>
+      </div>
+      <div class="modal__group">
+        <input
+          class="modal__checkbox"
+          type="checkbox"
+          name="ice-coffee"
+          id="ice-coffee"
+        />
+        <label class="modal__item modal__icecoffee" for="ice-coffee">
+          Ice coffee
+        </label>
+        <div class="modal__thumb ice-coffee">
+          <img
+            class="modal__img"
+            srcset="./images/modals/img2.jpg 1x, ./images/modals/img2@2x.jpg 2x"
+            src="./images/modals/img2.jpg"
+            alt="Ice coffee"
+          />
+        </div>
+      </div>
+      <div class="modal__group">
+        <input
+          class="modal__checkbox"
+          type="checkbox"
+          name="milkshake"
+          id="milkshake"
+        />
+        <label class="modal__item modal__milkshake" for="milkshake">
+          Milkshake
+        </label>
+        <div class="modal__thumb milkshake">
+          <img
+            class="modal__img"
+            srcset="./images/modals/img3.jpg 1x, ./images/modals/img3@2x.jpg 2x"
+            src="./images/modals/img3.jpg"
+            alt="Milkshake"
+          />
+        </div>
       </div>
     </div>
-    <div class="modal__group">
+    <div class="buy-form">
       <input
-        class="modal__checkbox"
-        type="checkbox"
-        name="ice-coffee"
-        id="ice-coffee"
+        class="modal__input"
+        type="text"
+        name="username"
+        placeholder="Name"
+        required
+        pattern="^[a-zA-Z]+\s[a-zA-Z]+$"
       />
-      <label class="modal__item modal__icecoffee" for="ice-coffee">
-        Ice coffee
-      </label>
-      <div class="modal__thumb ice-coffee">
-        <img
-          class="modal__img"
-          srcset="./images/modals/img2.jpg 1x, ./images/modals/img2@2x.jpg 2x"
-          src="./images/modals/img2.jpg"
-          alt="Ice coffee"
-        />
-      </div>
-    </div>
-    <div class="modal__group">
       <input
-        class="modal__checkbox"
-        type="checkbox"
-        name="milkshake"
-        id="milkshake"
+        class="modal__input"
+        type="text"
+        name="user_phone"
+        placeholder="Phone"
+        required
+        pattern="\+?[0-9\s\-\(\)]+"
+        minlength="13"
+        maxlength="13"
       />
-      <label class="modal__item modal__milkshake" for="milkshake">
-        Milkshake
-      </label>
-      <div class="modal__thumb milkshake">
-        <img
-          class="modal__img"
-          srcset="./images/modals/img3.jpg 1x, ./images/modals/img3@2x.jpg 2x"
-          src="./images/modals/img3.jpg"
-          alt="Milkshake"
-        />
-      </div>
+      <textarea
+        class="modal__input"
+        name="textarea"
+        id="textarea"
+        cols="20"
+        rows="3"
+        placeholder="Comment"
+      ></textarea>
+      <button class="btn" type="submit">Submit</button>
     </div>
-  </form>
-  <form class="buy-form" name="buy_form">
-    <input
-      class="modal__input"
-      type="text"
-      name="username"
-      placeholder="Name"
-      required
-      pattern="^[a-zA-Z]+\s[a-zA-Z]+$"
-    />
-    <input
-      class="modal__input"
-      type="text"
-      name="user_phone"
-      placeholder="Phone"
-      required
-      pattern="\+?[0-9\s\-\(\)]+"
-      minlength="13"
-      maxlength="13"
-    />
-    <textarea
-      class="modal__input"
-      name="textarea"
-      id="textarea"
-      cols="20"
-      rows="3"
-      placeholder="Comment"
-    ></textarea>
-    <button class="btn" type="submit">Submit</button>
   </form>
 </div>
