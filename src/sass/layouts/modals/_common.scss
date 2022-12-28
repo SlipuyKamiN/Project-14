@@ -9,7 +9,7 @@
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 20;
-  transition: 250ms all;
+  transition: $action-total-time all;
   overflow-y: auto;
 }
 
