@@ -250,7 +250,6 @@
     display: block;
     padding-top: 14px;
   }
-  animation: scale-in-right 1000ms backwards 1000ms;
 }
 
 .places__item:not(:last-child) {
@@ -331,21 +330,5 @@
   100% {
     opacity: 1;
     transform: scale(1);
-  }
-}
-@keyframes scale-in-right {
-  0% {
-    -webkit-transform: scale(0);
-    transform: scale(0);
-    -webkit-transform-origin: 100% 50%;
-    transform-origin: 100% 50%;
-    opacity: 1;
-  }
-  100% {
-    -webkit-transform: scale(1);
-    transform: scale(1);
-    -webkit-transform-origin: 100% 50%;
-    transform-origin: 100% 50%;
-    opacity: 1;
   }
 }
