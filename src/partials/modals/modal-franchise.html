@@ -18,14 +18,14 @@
     contact information below and we will reach out for additional information.
     We appreciate your patience.
   </p>
-  <form class="buy-form" name="buy_form">
+  <form class="buy-form" name="buy_form" autocomplete="off">
     <input
       class="modal__input"
       type="text"
       name="username"
       placeholder="Name"
       required
-      pattern="^[a-zA-Z]+\s[a-zA-Z]+$"
+      pattern="^[a-zA-Z]+$"
     />
     <input
       class="modal__input"
@@ -33,8 +33,9 @@
       name="user_phone"
       placeholder="Phone"
       pattern="\+?[0-9\s\-\(\)]+"
-      minlength="13"
+      minlength="10"
       maxlength="13"
+      required
     />
     <input
       class="modal__input"
@@ -42,6 +43,7 @@
       name="user_mail"
       placeholder="Email"
       pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+      required
     />
     <textarea
       class="modal__input"
