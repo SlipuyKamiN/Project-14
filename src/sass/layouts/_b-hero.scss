@@ -250,6 +250,7 @@
     display: block;
     padding-top: 14px;
   }
+  animation: right-to-left 1000ms backwards 1000ms;
 }
 
 .places__item:not(:last-child) {
@@ -330,5 +331,22 @@
   100% {
     opacity: 1;
     transform: scale(1);
+  }
+}
+
+// ANIMATION
+@keyframes right-to-left {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+
+  50% {
+    opacity: 0.6;
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
   }
 }
