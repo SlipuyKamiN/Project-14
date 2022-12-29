@@ -10,7 +10,7 @@
     <use href="./images/icons.svg#icon-close-smaller"></use>
   </svg>
   <strong class="modal-label">Buy now</strong>
-  <form>
+  <form autocomplete="off">
     <div class="modal__list">
       <div class="modal__group">
         <input
@@ -77,7 +77,7 @@
         name="username"
         placeholder="Name"
         required
-        pattern="^[a-zA-Z]+\s[a-zA-Z]+$"
+        pattern="^[a-zA-Z]+$"
       />
       <input
         class="modal__input"
@@ -86,7 +86,7 @@
         placeholder="Phone"
         required
         pattern="\+?[0-9\s\-\(\)]+"
-        minlength="13"
+        minlength="10"
         maxlength="13"
       />
       <textarea
