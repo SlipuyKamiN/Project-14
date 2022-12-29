@@ -164,6 +164,7 @@
   padding: 12px 31px 64px 31px;
   background-color: $bgc-primary-color;
   z-index: 19;
+  overflow-y: scroll;
 
   transform: translateX(100%);
   transition: transform $action-total-time $action-cubic-time;
