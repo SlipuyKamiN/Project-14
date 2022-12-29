@@ -7,6 +7,14 @@
 
   width: 100%;
   background-color: transparent;
+
+  @media screen and (min-width: 1200px) {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
 }
 .header__container {
   display: flex;
@@ -21,6 +29,14 @@
     padding-top: 8px;
   }
 }
+
+.header__no-transparency {
+  @media screen and (min-width: 1200px) {
+    background-color: rgba(132, 161, 120, 0.8);
+    backdrop-filter: blur(3px);
+  }
+}
+
 .logo {
   width: 40px;
   @media screen and (min-width: 768px) {
