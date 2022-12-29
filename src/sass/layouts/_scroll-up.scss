@@ -9,16 +9,18 @@
   right: 20px;
   z-index: 99;
   font-size: 18px;
-  border: none;
+  border: 2px solid $bgc-primary-color;
   border-radius: 50%;
   outline: none;
   background-color: $brand-primary-color;
   cursor: $pointer;
   padding: 15px;
+  transform: scale(1);
+  transition: transform $action-total-time $action-cubic-time;
 }
 
 .up__btn:hover {
-  background-color: $card-yellow-color;
+  transform: scale(1.1);
 }
 .up__img {
   transform: rotate(270deg);
